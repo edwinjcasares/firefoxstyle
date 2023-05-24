@@ -61,6 +61,9 @@ user_pref("userChrome.hidden.tabbar", true);
 // Microphone indicator
 user_pref("privacy.webrtc.legacyGlobalIndicator", false);
 
+// Inspect Accessibility Properties
+user_pref("devtools.accessibility.enabled", false);
+
 // Pocket integration
 user_pref("extensions.pocket.enabled", false);
 
