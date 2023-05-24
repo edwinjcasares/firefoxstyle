@@ -1,0 +1,32 @@
+/*---------- Bookmarking --------------------------*/
+#tabContextMenu #context_bookmarkSelectedTabs,
+#tabContextMenu #context_bookmarkTab,
+#context-bookmarklink,
+#context-bookmarkframe,
+#context-reloadframe + menuseparator,
+#context-keywordfield,
+#frame-sep,
+
+/*---------- Container Menuitems -----------------*/
+#context-openlinkinusercontext-menu,
+#tabContextMenu #context_reopenInContainer,
+#placesContext_open\:newcontainertab,
+
+/*---------- Set Image as Background -------------*/
+#context-sep-setbackground,
+#context-setDesktopBackground,
+
+/*---------- Check Spelling -------------*/
+#spell-separator,
+#spell-check-enabled,
+#spell-language-separator,
+#context-sep-bidi,
+
+/*---------- Send Image by Mail ------------------*/
+#context-sendvideo,
+#context-sendaudio,
+#context-sendimage,
+
+/*---------- Hamburger Password ------------------*/
+#appMenu-passwords-button
+{ display:none!important; }

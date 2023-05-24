@@ -1,0 +1,5 @@
+/*----- Remove Extension Text from URLBar --------------*/
+#identity-box.extensionPage label{display: none !important;}
+  
+/*----- "Find in page" bar top border --------------*/
+.browserContainer > findbar:nth-child(3){border-top: none !important}

@@ -1,0 +1,25 @@
+/* IMPORTANT */
+/*
+Requires autohide_sidebar.css
+*/
+
+#sidebar-box{
+  --uc-sidebar-width: 39px;
+  --uc-sidebar-hover-width: 260px;
+  --uc-autohide-sidebar-delay: 200ms; /* Wait 0.2s before hiding sidebar */
+}
+
+#sidebar,
+#sidebar-header{
+  background-color: var(--uc-base-colour) !important;
+  border-inline: 1px solid var(--uc-base-colour); /* Sidebar border */
+  border-bottom: 0px !important;
+}
+
+#sidebar-title {margin-left: 4px !important;}
+
+#sidebar-switcher-target {padding-left: 2px !important;}
+
+#sidebar-close,
+#sidebar-switcher-arrow {display: none;}
+
