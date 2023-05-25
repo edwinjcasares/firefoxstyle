@@ -1,0 +1,19 @@
+/** Vertical Tabs --------------*/
+#sidebar-box{
+  --uc-sidebar-width: 39px;
+  --uc-sidebar-hover-width: 260px;
+  --uc-autohide-sidebar-delay: 200ms; /* Wait 0.2s before hiding sidebar */
+  --sidebar-background-color: #1E202F !important;
+}
+
+#sidebar,
+#sidebar-header{
+  border-inline: 1px solid #1E202F;
+  border-bottom: 0px !important;
+}
+
+#sidebar-close,
+#sidebar-switcher-arrow {display: none;}
+
+#sidebar-title {margin-left: 4px !important;}
+#sidebar-switcher-target {padding-left: 2px !important;}

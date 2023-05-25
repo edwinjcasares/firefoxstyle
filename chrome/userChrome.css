@@ -1,21 +1,12 @@
 /** Lepton stylesheet *****************************************/
 @import url("css/leptonChrome.css");
 
-/** Color Scheme **********************************************/
-@import url("css/color_scheme.css");
-/* @import url("css/color_variable_template.css"); */
-
-/** Tabs bar **************************************************/
-@import url("css/hide_toolbox_top_bottom_borders.css");
-
-/** Sidebat ***************************************************/
+/** Vertical Tabs ***************************************************/
 @import url("css/autohide_sidebar.css");
+@import url("css/vertical_tabs.css");
 
 /** Menus *****************************************************/
 @import url("css/hide_menu_items.css");
-
-/** Linux *****************************************************/
-/*@import url("css/linux_gtk_window_control_patch.css");
 
 /** Miscellaneous CSS tweaks **********************************/
 @import url("css/miscellaneous_tweaks.css");
