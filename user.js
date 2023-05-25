@@ -78,3 +78,6 @@ user_pref("browser.urlbar.suggest.calculator", true);
 
 // Integrated unit convertor at urlbar
 // user_pref("browser.urlbar.unitConversion.enabled", true);
+
+// Linux: Sidebar Hover fix
+// user_pref("widget.gtk.ignore-bogus-leave-notify", 1);

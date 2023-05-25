@@ -1,8 +1,10 @@
+/** Requires autohide_sidebar.css */
+
 /** Vertical Tabs --------------*/
 #sidebar-box{
-  --uc-sidebar-width: 39px;
+  --uc-sidebar-width: 40px;
   --uc-sidebar-hover-width: 260px;
-  --uc-autohide-sidebar-delay: 200ms; /* Wait 0.2s before hiding sidebar */
+  --uc-autohide-sidebar-delay: 100ms; /* Wait 0.1s before hiding sidebar */
   --sidebar-background-color: #1E202F !important;
 }
 
