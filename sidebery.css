@@ -4,6 +4,7 @@
   --tabs-pinned-height: 34px;
   --tabs-pinned-width: 34px;
   --tabs-height: 34px;
+  --tabs-lvl-opacity: 0.5;
 
   --frame-bg: #1E202F;
   --ctx-menu-bg: #19191F;
@@ -12,6 +13,10 @@
 
 #nav_bar{
   margin-left: 2px;
+}
+
+#nav_bar .audio{
+  display: none;
 }
 
 .Tab .fav-icon {
@@ -53,12 +58,4 @@
   }
 }
 
-/* OLD STYLES
-#root.root {
-  --nav-btn-width: 38px;
-  --nav-btn-height: 38px;
-  --tabs-height: 34px;
-  --frame-bg: #1E202F;
-  --ctx-menu-bg: #19191F;
-  --tabs-activated-bg: #323443;
-}
+/*#root[data-tabs-tree-lvl-marks=true] .Tab[data-pin=false]:not([data-lvl="0"]) .body:after { background-color:red;}*/
