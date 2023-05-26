@@ -1,17 +1,22 @@
 #root.root {
+  /* Collapsed buttons size */
   --nav-btn-width: 34px;
   --nav-btn-height: 34px;
   --tabs-pinned-height: 34px;
   --tabs-pinned-width: 34px;
   --tabs-height: 34px;
-  --tabs-lvl-opacity: 0.5;
 
-  --frame-bg: #1E202F;
-  --ctx-menu-bg: #19191F;
-  --tabs-activated-bg: #323443;
+  --tabs-lvl-opacity: 0.5;    /* Sub-Tabs marks*/
+  --frame-bg: #1E202F;    /* Background */
+  --ctx-menu-bg: #19191F;    /* Context menu */
+  --tabs-activated-bg: #323443;    /* Activated tabs */
 }
 
 #nav_bar{
+  margin-left: 2px;
+}
+
+.Tab .fav-icon {
   margin-left: 2px;
 }
 
@@ -19,25 +24,22 @@
   display: none;
 }
 
-.Tab .fav-icon {
-  left: 2px;
+.Tab .audio {
+  transform: translate(-8px,-10px);
 }
 
 .Tab .t-box {
   --audio-btn-offset: 0px;
-  margin-left: 3px !important;
+  margin-left: 5px !important;
 }
 
-.Tab .audio {
-  left: 15px !important;
-  top: -10px !important;
-}
-
+  /* Container mark */
 .ctx {
-    box-shadow: 0 1px 10px 1px var(--color);
+  box-shadow: 0 1px 10px 1px var(--color);
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 200px) {  /* Max width this big to fix an issue with incomplete tab names */
+    /* Sub-Tabs padding */
   #root {
     --tabs-indent: 0px;
   }
@@ -57,5 +59,3 @@
     display: none !important;
   }
 }
-
-/*#root[data-tabs-tree-lvl-marks=true] .Tab[data-pin=false]:not([data-lvl="0"]) .body:after { background-color:red;}*/
