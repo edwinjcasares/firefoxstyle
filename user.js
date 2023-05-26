@@ -51,9 +51,6 @@ user_pref("userContent.page.proton_color", true);
 user_pref("userContent.page.dark_mode", true); // Need proton_color
 user_pref("userContent.page.proton", true); // Need proton_color
 
-user_pref("userChrome.theme.proton_color.dark_blue_accent", true);
-user_pref("userContent.page.proton_color.dark_blue_accent", true);
-
 user_pref("userChrome.hidden.tabbar", true);
 
 // ** Personal Options *********************************************************

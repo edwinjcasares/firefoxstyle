@@ -1,2 +1,5 @@
 /** Import Lepton stylesheet *****************************************/
 @import url("css/leptonContent.css");
+
+/** Accent color *****************************************************/
+@import url("css/accent_color.css");

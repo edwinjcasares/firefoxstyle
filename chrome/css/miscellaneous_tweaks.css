@@ -1,6 +1,10 @@
-/** Remove Extension Text from URLBar --------------*/
+/** Remove Extension text from URLBar --------------*/
 #identity-box.extensionPage label{display: none !important;}
-  
+
+/** Remove placeholder from URLBar --------------*/
+#urlbar-input::placeholder,
+.searchbar-textbox::placeholder { opacity: 0 !important;}
+
 /** Bookmark bar bottom border --------------*/
 #navigator-toolbox{ border-bottom: none !important }
 

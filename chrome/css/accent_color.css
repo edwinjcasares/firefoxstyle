@@ -1,0 +1,20 @@
+:root,
+panel,
+dialog,
+window {
+ --firefox-accent-color: #486860; /* Moss */
+ /*--firefox-accent-color: #779ecb; /* Dark Pastel Blue*/
+
+ --lwt-toolbarbutton-icon-fill-attention: var(--firefox-accent-color) !important;
+ --button-primary-bgcolor: var(--firefox-accent-color) !important;
+ --button-primary-hover-bgcolor: var(--firefox-accent-color) !important;
+ --button-primary-active-bgcolor: var(--firefox-accent-color) !important;
+ --in-content-primary-button-background: var(--firefox-accent-color) !important;
+ --in-content-primary-button-background-hover: var(--firefox-accent-color) !important;
+ --in-content-primary-button-background-active: var(--firefox-accent-color) !important;
+ --input-border-color: var(--firefox-accent-color) !important;
+ --uc-checkbox-checked-bgcolor: var(--firefox-accent-color) !important;
+ --checkbox-checked-bgcolor: var(--firefox-accent-color) !important;
+ --focus-outline-color: var(--firefox-accent-color) !important;
+ --in-content-link-color: var(--firefox-accent-color) !important;
+}
