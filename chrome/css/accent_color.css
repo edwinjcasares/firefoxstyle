@@ -17,4 +17,5 @@ window {
  --checkbox-checked-bgcolor: var(--firefox-accent-color) !important;
  --focus-outline-color: var(--firefox-accent-color) !important;
  --in-content-link-color: var(--firefox-accent-color) !important;
+ --autocomplete-popup-highlight-background: var(--firefox-accent-color) !important;
 }
