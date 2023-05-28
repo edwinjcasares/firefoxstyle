@@ -51,7 +51,7 @@ user_pref("userContent.page.proton_color", true);
 user_pref("userContent.page.dark_mode", true); // Need proton_color
 user_pref("userContent.page.proton", true); // Need proton_color
 
-user_pref("userChrome.hidden.tabbar", true);
+user_pref("userChrome.hidden.tabbar", false);
 
 // ** Personal Options *********************************************************
 
@@ -78,3 +78,6 @@ user_pref("browser.urlbar.suggest.calculator", true);
 
 // Linux: Sidebar Hover fix
 // user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
+
+// Personal Theme
+user_pref("userChrome.theme.personal.full", false);

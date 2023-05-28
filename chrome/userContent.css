@@ -1,5 +1,5 @@
-/** Import Lepton stylesheet *****************************************/
+/** Import Lepton stylesheet ****************************************8********/
 @import url("css/leptonContent.css");
 
-/** Colors Firefox ***************************************************/
-@import url("css/colors_firefox.css");
+/** Color theme **************************************************************/
+@import url("css/color_theme.css");

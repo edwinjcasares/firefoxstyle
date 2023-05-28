@@ -10,3 +10,8 @@
 
 /** FindBar top border --------------*/
 .browserContainer > findbar:nth-child(3){border-top: none !important}
+
+/** Context menu colors --------------*/
+html#main-window menupopup:not(.in-menulist) {
+    --menu-border-color: var(--arrowpanel-border-color,var(--button-active-bgcolor, var(--card-outline-color))) !important;
+}
