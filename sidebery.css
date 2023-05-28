@@ -5,11 +5,12 @@
   --tabs-pinned-height: 34px;
   --tabs-pinned-width: 34px;
   --tabs-height: 34px;
-
   --tabs-lvl-opacity: 0.5;    /* Sub-Tabs marks*/
-  --frame-bg: #1E202F;    /* Background */
-  --ctx-menu-bg: #19191F;    /* Context menu */
-  --tabs-activated-bg: #323443;    /* Activated tabs */
+
+  --frame-bg: var(--uc-background-color);                       /* Background */
+  --ctx-menu-bg: var(--uc-background-color);                    /* Context menu */
+  --tabs-activated-bg: var(--uc-highlight-color);               /* Activated tabs */
+  --frame-el-overlay-selected-border: var(--uc-accent-color);;  /* Selected tab border */
 }
 
 #nav_bar{

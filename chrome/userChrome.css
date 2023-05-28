@@ -1,15 +1,15 @@
 /** Lepton stylesheet ************************************************/
 @import url("css/leptonChrome.css");
 
+/** Colors Firefox ***************************************************/
+@import url("css/colors_firefox.css");
+
 /** Vertical Tabs ****************************************************/
 @import url("css/autohide_sidebar.css");
 @import url("css/vertical_tabs.css");
 
 /** Menus ************************************************************/
 @import url("css/hide_menu_items.css");
-
-/** Accent color *****************************************************/
-@import url("css/accent_color.css");
 
 /** Miscellaneous CSS tweaks *****************************************/
 @import url("css/miscellaneous_tweaks.css");
