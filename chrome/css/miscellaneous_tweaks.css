@@ -11,7 +11,6 @@
 #sidebar-header{
   border-inline: 1px solid var(--toolbar-bgcolor);
   border-bottom: none !important;
-  border-left: none !important;
 }
 
 #sidebar-close,
