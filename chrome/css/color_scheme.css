@@ -9,7 +9,7 @@ window {
   --uc-text-color: #E6E6E8;
 
   /** Accent color ***********************************************************/
-  --uc-accent-color: #e0af68;               /* Accent color */
+  --uc-accent-color: #e0af68;
 
   --lwt-toolbarbutton-icon-fill-attention: var(--uc-accent-color) !important;
   --button-primary-bgcolor: var(--uc-accent-color) !important;

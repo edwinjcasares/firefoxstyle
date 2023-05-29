@@ -5,7 +5,7 @@
   --tabs-pinned-height: 34px;
   --tabs-pinned-width: 34px;
   --tabs-height: 34px;
-  --tabs-lvl-opacity: 0.5;    /* Sub-Tabs marks*/
+  --tabs-lvl-opacity: 0.5;
   --frame-bg: var(--toolbar-bg);
 
   --frame-el-overlay-selected-border:  var(--uc-accent-color) !important;
