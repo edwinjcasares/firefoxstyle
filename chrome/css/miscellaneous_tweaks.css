@@ -29,6 +29,9 @@
 }
 #PersonalToolbar{
   --uc-autohide-toolbar-delay: 300ms; /* The toolbar is hidden after 0.3s */
+  width: fit-content;
+  align-self: center;
+  border-radius: 3px;
 }
 
 
