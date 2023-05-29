@@ -1,0 +1,27 @@
+:root,
+panel,
+dialog,
+window {
+  /** Colors *****************************************************************/
+  --uc-primary-color: #1E202F;              /* Background color */
+  --uc-secondary-color: #19191F;            /* Secondary color */
+  --uc-highlight-color: #434552;            /* Highlight color */
+  --uc-text-color: #CDD6F4;                 /* Text color */
+  --uc-accent-color: #486860;               /* Accent color */
+
+  /** Accent color ***********************************************************/
+  --lwt-toolbarbutton-icon-fill-attention: var(--uc-accent-color) !important;
+  --button-primary-bgcolor: var(--uc-accent-color) !important;
+  --button-primary-hover-bgcolor: var(--uc-accent-color) !important;
+  --button-primary-active-bgcolor: var(--uc-accent-color) !important;
+  --in-content-primary-button-background: var(--uc-accent-color) !important;
+  --in-content-primary-button-background-hover: var(--uc-accent-color) !important;
+  --in-content-primary-button-background-active: var(--uc-accent-color) !important;
+  --input-border-color: var(--uc-accent-color) !important;
+  --uc-checkbox-checked-bgcolor: var(--uc-accent-color) !important;
+  --checkbox-checked-bgcolor: var(--uc-accent-color) !important;
+  --focus-outline-color: var(--uc-accent-color) !important;
+  --in-content-link-color: var(--uc-accent-color) !important;
+  --autocomplete-popup-highlight-background: var(--uc-accent-color) !important;
+  --arrowpanel-dimmed: var(--uc-accent-color) !important;
+}

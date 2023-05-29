@@ -78,11 +78,3 @@ user_pref("browser.urlbar.suggest.calculator", true);
 
 // Linux: Sidebar Hover fix
 // user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
-
-// Personal theme
-user_pref("userChrome.theme.personal.accent", true);
-
-user_pref("userChrome.theme.personal.tokyo_night", true);
-user_pref("userChrome.theme.personal.catppuccin_mocha", false);
-
-user_pref("userChrome.theme.personal.full", false);

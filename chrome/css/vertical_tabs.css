@@ -5,12 +5,12 @@
   --uc-sidebar-width: 40px;
   --uc-sidebar-hover-width: 260px;
   --uc-autohide-sidebar-delay: 100ms; /* Wait 0.1s before hiding sidebar */
-  --sidebar-background-color: var(--toolbar-bgcolor) !important;
+  --sidebar-background-color: var(--uc-primary-color) !important;
 }
 
 #sidebar,
 #sidebar-header{
-  border-inline: 1px solid var(--toolbar-bgcolor);
+  border-inline: 1px solid var(--uc-primary-color);
   border-bottom: 0px !important;
 }
 
