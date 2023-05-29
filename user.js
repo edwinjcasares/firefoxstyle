@@ -51,7 +51,7 @@ user_pref("userContent.page.proton_color", true);
 user_pref("userContent.page.dark_mode", true); // Need proton_color
 user_pref("userContent.page.proton", true); // Need proton_color
 
-user_pref("userChrome.hidden.tabbar", false);
+user_pref("userChrome.hidden.tabbar", true);
 
 // ** Personal Options *********************************************************
 
@@ -79,5 +79,10 @@ user_pref("browser.urlbar.suggest.calculator", true);
 // Linux: Sidebar Hover fix
 // user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
 
-// Personal Theme
+// Personal theme
+user_pref("userChrome.theme.personal.accent", true);
+
+user_pref("userChrome.theme.personal.tokyo_night", true);
+user_pref("userChrome.theme.personal.catppuccin_mocha", false);
+
 user_pref("userChrome.theme.personal.full", false);

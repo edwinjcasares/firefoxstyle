@@ -7,25 +7,25 @@
   --tabs-height: 34px;
   --tabs-lvl-opacity: 0.5;    /* Sub-Tabs marks*/
 
-  --frame-bg: var(--uc-primary-color);                          /* Background */
-  /* --frame-fg: var(--uc-text-color);                             /* Foreground */
-  --toolbar-bg: var(--uc-primary-color);                        /* Background */
+  --frame-bg: var(--uc-primary-color);                              /* Background */
+  /* --frame-fg: var(--uc-text-color);                              /* Foreground */
+  /* --toolbar-bg: var(--uc-primary-color);                         /* Background */
 
   --ctx-menu-bg: var(--uc-secondary-color);                       /* Context menu background */
   /* --ctx-menu-fg: var(--uc-text-color);                          /* Context menu text */
   /* --ctx-menu-separator: var(--uc-text-color);                   /* Context menu separator */
   /* --ctx-menu-shadow: 0 0 0 1px red, 0 1px 16px 0 red;       /* Context menu border */
-  --popup-bg: var(--uc-secondary-color);                          /* Popup background */
+  --popup-bg: var(--uc-secondary-color);                          /* Popup background
   /* --popup-fg: var(--uc-text-color);                             /* Popup text */
 
-  --tabs-activated-bg: var(--uc-highlight-color);               /* Activated tab background */
+  /* --tabs-activated-bg: var(--uc-highlight-color);               /* Activated tab background */
   /* --active-el-fg: var(--uc-text-color);                         /* Activated tab text */
-  --toolbar-el-overlay-hover-bg: var(--uc-highlight-color);     /* Activated panel background*/
+  /* --toolbar-el-overlay-hover-bg: var(--uc-highlight-color);     /* Activated panel background*/
   /* --toolbar-fg: var(--uc-text-color);                           /* Activated panel text*/
-  --frame-el-overlay-selected-border: var(--uc-accent-color);   /* Selected tab border */
-  --toolbar-el-overlay-selected-border: var(--uc-accent-color); /* Selected panel border */
+  --frame-el-overlay-selected-border: var(--uc-accent-color);       /* Selected tab border */
+  --toolbar-el-overlay-selected-border: var(--uc-accent-color);     /* Selected panel border */
 
-  --accent: var(--uc-accent-color);                             /* Accent */
+  --accent: var(--uc-accent-color);                                 /* Accent */
 }
 
 #nav_bar{
