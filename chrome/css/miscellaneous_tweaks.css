@@ -1,17 +1,52 @@
-/** Remove Extension text from URLBar --------------*/
+/** Vertical Tabs ************************************************************/
+/** Requires autohide_sidebar.css */
+#sidebar-box{
+  --uc-sidebar-width: 40px;
+  --uc-sidebar-hover-width: 260px;
+  --uc-autohide-sidebar-delay: 300ms; /* Wait 0.1s before hiding sidebar */
+  --sidebar-background-color: var(--toolbar-bgcolor) !important;
+}
+
+#sidebar,
+#sidebar-header{
+  border-inline: 1px solid var(--toolbar-bgcolor);
+  border-bottom: none !important;
+  border-left: none !important;
+}
+
+#sidebar-close,
+#sidebar-switcher-arrow {display: none;}
+
+#sidebar-title {margin-left: 5px !important;}
+#sidebar-switcher-target {padding-left: 2px !important;}
+
+
+/** Bookmarks Bar ************************************************************/
+/** Requires autohide_bookmarks_toolbar.css */
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: safe center !important;
+}
+#PersonalToolbar{
+  --uc-autohide-toolbar-delay: 300ms; /* The toolbar is hidden after 0.3s */
+}
+
+
+/** Miscellaneous Tweaks  ****************************************************/
+/** Remove Extension text from URLBar */
 #identity-box.extensionPage label{display: none !important;}
 
-/** Remove placeholder from URLBar --------------*/
+/** Remove placeholder from URLBar */
 #urlbar-input::placeholder,
 .searchbar-textbox::placeholder { opacity: 0 !important;}
 
-/** Bookmark bar bottom border --------------*/
+/** Bookmark bar bottom border */
 #navigator-toolbox{ border-bottom: none !important; }
 
-/** FindBar top border --------------*/
+/** FindBar top border */
 .browserContainer > findbar:nth-child(3){border-top: none !important}
 
-/** Context menu colors --------------*/
+/** Context menu border color */
 html#main-window menupopup:not(.in-menulist) {
-    --menu-border-color: var(--arrowpanel-border-color,var(--button-active-bgcolor, var(--card-outline-color))) !important;
+  --menu-border-color: var(--arrowpanel-border-color,var(--button-active-bgcolor, var(--card-outline-color))) !important;
 }
