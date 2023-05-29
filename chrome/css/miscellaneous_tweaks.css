@@ -6,7 +6,7 @@
 .searchbar-textbox::placeholder { opacity: 0 !important;}
 
 /** Bookmark bar bottom border --------------*/
-#navigator-toolbox{ border-bottom: none !important }
+#navigator-toolbox{ border-bottom: none !important; }
 
 /** FindBar top border --------------*/
 .browserContainer > findbar:nth-child(3){border-top: none !important}

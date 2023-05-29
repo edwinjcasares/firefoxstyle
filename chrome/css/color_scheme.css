@@ -3,20 +3,13 @@ panel,
 dialog,
 window {
   /** Colors *****************************************************************/
-  /* Twinkling Stars */
-  --uc-primary-color: #1E202F;              /* Background color */
-  --uc-secondary-color: #19191F;            /* Secondary color */
-  --uc-highlight-color: #434552;            /* Highlight color */
-  --uc-text-color: #CDD6F4;                 /* Text color */
-
-  /* Cascade */
-  /* --uc-primary-color: #191B1C; */
-  /* --uc-secondary-color: #1E2021; */
-  /* --uc-highlight-color: #AAAAAC; */
-  /* --uc-text-color: #E6E6E8; */
+  --uc-primary-color: #191B1C;
+  --uc-secondary-color: #1E2021;
+  --uc-highlight-color: #AAAAAC;
+  --uc-text-color: #E6E6E8;
 
   /** Accent color ***********************************************************/
-  --uc-accent-color: #486860;               /* Accent color */
+  --uc-accent-color: #e0af68;               /* Accent color */
 
   --lwt-toolbarbutton-icon-fill-attention: var(--uc-accent-color) !important;
   --button-primary-bgcolor: var(--uc-accent-color) !important;
@@ -31,5 +24,6 @@ window {
   --focus-outline-color: var(--uc-accent-color) !important;
   --in-content-link-color: var(--uc-accent-color) !important;
   --autocomplete-popup-highlight-background: var(--uc-accent-color) !important;
-  --arrowpanel-dimmed: var(--uc-accent-color) !important;
+  --toolbar-fg-active: var(--uc-accent-color) !important;
+  --scroll-progress-bg: var(--uc-accent-color) !important;
 }

@@ -6,15 +6,14 @@
   --tabs-pinned-width: 34px;
   --tabs-height: 34px;
   --tabs-lvl-opacity: 0.5;    /* Sub-Tabs marks*/
+  --frame-bg: var(--toolbar-bg);
 
-  --frame-bg: var(--uc-primary-color);                              /* Background */
-  --toolbar-bg: var(--uc-primary-color);                            /* Background */
-  --ctx-menu-bg: var(--uc-secondary-color);                         /* Context menu background */
-  --popup-bg: var(--uc-secondary-color);                            /* Popup background */
-  --tabs-activated-bg: var(--uc-highlight-color);                   /* Activated tab background */
-  --toolbar-el-overlay-hover-bg: var(--uc-highlight-color);         /* Activated panel background*/
-  --toolbar-el-overlay-selected-bg: var(--uc-highlight-color);      /* Activated panel background*/
-  --accent: var(--uc-accent-color);                                 /* Accent */
+  --frame-el-overlay-selected-border:  var(--uc-accent-color) !important;
+  --toolbar-el-overlay-selected-border:  var(--uc-accent-color) !important;
+  --scroll-progress-bg:  var(--uc-accent-color) !important;
+  --nav-btn-accent:  var(--uc-accent-color) !important;
+  --status-notice:  var(--uc-accent-color) !important;
+  --accent: var(--uc-accent-color) !important;
 }
 
 #nav_bar{
