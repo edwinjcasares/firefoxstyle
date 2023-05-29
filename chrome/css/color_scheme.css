@@ -26,4 +26,5 @@ window {
   --autocomplete-popup-highlight-background: var(--uc-accent-color) !important;
   --toolbar-fg-active: var(--uc-accent-color) !important;
   --scroll-progress-bg: var(--uc-accent-color) !important;
+  --urlbar-popup-url-color: var(--uc-accent-color) !important;
 }
