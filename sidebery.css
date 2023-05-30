@@ -37,7 +37,11 @@
   margin-left: 5px !important;
 }
 
-  /* Container mark */
+.Tab .body::after{
+	transform: translateY(4px);
+}
+
+/* Container mark */
 .ctx {
   box-shadow: 0 1px 10px 1px var(--color);
 }
