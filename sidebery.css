@@ -5,8 +5,11 @@
   --tabs-pinned-height: 34px;
   --tabs-pinned-width: 34px;
   --tabs-height: 34px;
-  --tabs-lvl-opacity: 0.5;
+  --tabs-lvl-opacity: 0.4;
   --frame-bg: var(--toolbar-bg);
+
+  /*--tabs-activated-bg: var(--toolbar-el-overlay-hover-bg);
+  --tabs-activated-fg: var(--frame-fg);*/
 
   --frame-el-overlay-selected-border:  var(--uc-accent-color) !important;
   --toolbar-el-overlay-selected-border:  var(--uc-accent-color) !important;
@@ -38,7 +41,8 @@
 }
 
 .Tab .body::after{
-	transform: translateY(4px);
+  transform: translateY(4px);
+  width: 2px;
 }
 
 /* Container mark */
