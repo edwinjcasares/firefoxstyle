@@ -91,6 +91,3 @@ user_pref("browser.urlbar.suggest.calculator", true);
 
 // Linux: Sidebar Hover fix
 // user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
-
-// Autohide centered bookmarks
-user_pref("userChrome.personal.bookmarks", true);

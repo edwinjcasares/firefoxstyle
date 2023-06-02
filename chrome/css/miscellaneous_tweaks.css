@@ -4,7 +4,7 @@
 #sidebar-box{
   --uc-sidebar-width: 40px;
   --uc-sidebar-hover-width: 260px;
-  --uc-autohide-sidebar-delay: 300ms; /* Wait 0.1s before hiding sidebar */
+  --uc-autohide-sidebar-delay: 200ms; /* Wait 0.2s before hiding sidebar */
   --sidebar-background-color: var(--toolbar-bgcolor) !important;
 }
 
@@ -28,18 +28,16 @@
 /** Bookmarks Bar ********************************************************************************/
 /** Requires autohide_bookmarks_toolbar.css */
 
-@supports -moz-bool-pref("userChrome.personal.bookmarks") {
-  #PlacesToolbarItems {
-    display: flex !important;
-    justify-content: safe center !important;
-  }
-  #PersonalToolbar{
-    --uc-autohide-toolbar-delay: 300ms; /* The toolbar is hidden after 0.3s */
-    --toolbarseparator-color: var(--lwt-text-color);
-    width: fit-content;
-    align-self: center;
-    border-radius: 3px;
-  }
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: safe center !important;
+}
+#PersonalToolbar{
+  --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.2s */
+  --toolbarseparator-color: var(--lwt-text-color);
+  width: fit-content;
+  align-self: center;
+  border-radius: 3px;
 }
 
 /** Miscellaneous Tweaks  ************************************************************************/
