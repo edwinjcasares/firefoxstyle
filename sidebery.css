@@ -15,8 +15,8 @@
   --status-notice:  var(--uc-accent-color) !important;
   --accent: var(--uc-accent-color) !important;
 
-  /*--tabs-activated-bg: var(--toolbar-el-overlay-hover-bg);/*
-  /*--tabs-activated-fg: var(--frame-fg);*/
+  /* --tabs-activated-bg: var(--toolbar-el-overlay-hover-bg); */
+  /* --tabs-activated-fg: var(--frame-fg); */
 }
 
 #nav_bar{
