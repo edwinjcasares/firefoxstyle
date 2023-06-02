@@ -5,11 +5,8 @@
   --tabs-pinned-height: 34px;
   --tabs-pinned-width: 34px;
   --tabs-height: 34px;
-  --tabs-lvl-opacity: 0.4;
+  --tabs-lvl-opacity: 0.33;
   --frame-bg: var(--toolbar-bg);
-
-  /*--tabs-activated-bg: var(--toolbar-el-overlay-hover-bg);
-  --tabs-activated-fg: var(--frame-fg);*/
 
   --frame-el-overlay-selected-border:  var(--uc-accent-color) !important;
   --toolbar-el-overlay-selected-border:  var(--uc-accent-color) !important;
@@ -17,6 +14,9 @@
   --nav-btn-accent:  var(--uc-accent-color) !important;
   --status-notice:  var(--uc-accent-color) !important;
   --accent: var(--uc-accent-color) !important;
+
+  /*--tabs-activated-bg: var(--toolbar-el-overlay-hover-bg);/*
+  /*--tabs-activated-fg: var(--frame-fg);*/
 }
 
 #nav_bar{

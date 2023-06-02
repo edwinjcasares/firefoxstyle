@@ -1,4 +1,5 @@
-// ** Theme Default Options ****************************************************
+// ** Theme Default Options ***********************************************************************
+
 // Enable userchrome.css changes
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 
@@ -14,7 +15,19 @@ user_pref("layout.css.backdrop-filter.enabled", true);
 // CSS's `:has()` selector #457
 user_pref("layout.css.has-selector.enabled", true);
 
-// ** Lepton Related Options ***************************************************
+// ** Natural Smooth Scrolling V4 "SHARP" *********************************************************
+
+user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS",   12);//NSS    [120]
+user_pref("general.smoothScroll.msdPhysics.enabled",                    true);//NSS  [false]
+user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant",   200);//NSS   [1250]
+user_pref("general.smoothScroll.msdPhysics.regularSpringConstant",       250);//NSS   [1000]
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS",           25);//NSS     [12]
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio",     "2.0");//NSS    [1.3]
+user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant",      250);//NSS   [2000]
+user_pref("general.smoothScroll.currentVelocityWeighting",             "1.0");//NSS ["0.25"]
+user_pref("general.smoothScroll.stopDecelerationWeighting",            "1.0");//NSS  ["0.4"]
+
+// ** Lepton Related Options **********************************************************************
 
 user_pref("userChrome.theme.proton_color", true);
 user_pref("userChrome.theme.proton_chrome", true); // Need proton_color
@@ -53,7 +66,7 @@ user_pref("userContent.page.proton", true); // Need proton_color
 
 user_pref("userChrome.hidden.tabbar", true);
 
-// ** Personal Options *********************************************************
+// ** Personal Options ****************************************************************************
 
 // Microphone indicator
 user_pref("privacy.webrtc.legacyGlobalIndicator", false);
@@ -78,3 +91,6 @@ user_pref("browser.urlbar.suggest.calculator", true);
 
 // Linux: Sidebar Hover fix
 // user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
+
+// Autohide centered bookmarks
+user_pref("userChrome.personal.bookmarks", true);

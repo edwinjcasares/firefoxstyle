@@ -1,5 +1,5 @@
-/** Import Lepton stylesheet ****************************************8********/
+/** Import Lepton stylesheet *************************************************/
 @import url("css/leptonContent.css");
 
-/** Color theme **************************************************************/
-@import url("css/color_scheme.css");
+/** Color tweaks *************************************************************/
+@import url("css/color_tweaks.css");

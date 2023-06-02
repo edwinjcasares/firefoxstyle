@@ -1,8 +1,8 @@
 /** Lepton stylesheet ********************************************************/
 @import url("css/leptonChrome.css");
 
-/** Colors theme *************************************************************/
-@import url("css/color_scheme.css");
+/** Colors tweaks ************************************************************/
+@import url("css/color_tweaks.css");
 
 /** Autohide *****************************************************************/
 @import url("css/autohide_sidebar.css");

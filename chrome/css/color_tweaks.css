@@ -1,0 +1,18 @@
+/** Color Tweaks *********************************************************************************/
+
+:root,
+panel,
+dialog,
+window {
+  /** Accent color */
+  --uc-accent-color: #5C7C74;
+  --uc-accent-highlight-color: #8aa8a1;
+  
+  --in-content-primary-button-background: var(--uc-accent-color) !important;
+  --in-content-primary-button-background-active: var(--uc-accent-color) !important;
+  --in-content-primary-button-background-hover: var(--uc-accent-highlight-color) !important;
+
+  --in-content-link-color: var(--uc-accent-color) !important;
+  --urlbar-popup-url-color: var(--uc-accent-color) !important;
+  --focus-outline-color: var(--uc-accent-color) !important;
+}

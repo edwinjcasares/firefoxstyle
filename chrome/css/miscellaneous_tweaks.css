@@ -1,5 +1,6 @@
-/** Vertical Tabs ************************************************************/
+/** Vertical Tabs ********************************************************************************/
 /** Requires autohide_sidebar.css */
+
 #sidebar-box{
   --uc-sidebar-width: 40px;
   --uc-sidebar-hover-width: 260px;
@@ -13,6 +14,10 @@
   border-bottom: none !important;
 }
 
+#sidebar-header{
+  order: 1; 
+}
+
 #sidebar-close,
 #sidebar-switcher-arrow {display: none;}
 
@@ -20,22 +25,25 @@
 #sidebar-switcher-target {padding-left: 2px !important;}
 
 
-/** Bookmarks Bar ************************************************************/
+/** Bookmarks Bar ********************************************************************************/
 /** Requires autohide_bookmarks_toolbar.css */
-#PlacesToolbarItems {
-  display: flex !important;
-  justify-content: safe center !important;
-}
-#PersonalToolbar{
-  --uc-autohide-toolbar-delay: 300ms; /* The toolbar is hidden after 0.3s */
-  --toolbarseparator-color: var(--lwt-text-color);
-  width: fit-content;
-  align-self: center;
-  border-radius: 3px;
+
+@supports -moz-bool-pref("userChrome.personal.bookmarks") {
+  #PlacesToolbarItems {
+    display: flex !important;
+    justify-content: safe center !important;
+  }
+  #PersonalToolbar{
+    --uc-autohide-toolbar-delay: 300ms; /* The toolbar is hidden after 0.3s */
+    --toolbarseparator-color: var(--lwt-text-color);
+    width: fit-content;
+    align-self: center;
+    border-radius: 3px;
+  }
 }
 
+/** Miscellaneous Tweaks  ************************************************************************/
 
-/** Miscellaneous Tweaks  ****************************************************/
 /** Remove Extension text from URLBar */
 #identity-box.extensionPage label{display: none !important;}
 
@@ -52,12 +60,4 @@
 /** Popup border color (Lepton context menu border) */
 :root {
   --arrowpanel-border-color: var(--toolbarbutton-active-background,var(--button-active-bgcolor, var(--card-outline-color))) !important;
-}
-
-/** Extension icon mask */
-#_72cf1cb4-6679-4939-bb21-d4ce36de507a_-menuitem-2 image,                       /* Handy Screenshot */
-#_446900e4-71c2-419f-a6a7-df9c091e268b_-menuitem-_root image,                   /* Bitwarden */
-#languagetool-webextension_languagetool_org-menuitem-_languagetool-menu image,  /* Language Tools */
-#nav-bar-customization-target .webextension-browser-action image{
-  filter: grayscale(95%) invert(75%) sepia(8%) saturate(862%) hue-rotate(183deg) brightness(95%);
 }
