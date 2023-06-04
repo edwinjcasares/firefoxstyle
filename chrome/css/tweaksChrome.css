@@ -1,0 +1,62 @@
+/** Vertical Tabs ********************************************************************************/
+/** Requires autohide_sidebar.css */
+
+#sidebar-box{
+  --uc-sidebar-width: 40px;
+  --uc-sidebar-hover-width: 260px;
+  --uc-autohide-sidebar-delay: 200ms; /* Wait 0.2s before hiding sidebar */
+  /* --sidebar-background-color: var(--toolbar-bgcolor) !important; /* Sidebar background color*/
+}
+
+#sidebar,
+#sidebar-header{
+  border-inline: 1px solid var(--toolbar-bgcolor);
+  border-bottom: none !important;
+}
+
+#sidebar-header{
+  order: 1; 
+}
+
+#sidebar-close,
+#sidebar-switcher-arrow {display: none;}
+
+#sidebar-title {margin-left: 5px !important;}
+#sidebar-switcher-target {padding-left: 2px !important;}
+
+
+/** Bookmarks Bar ********************************************************************************/
+/** Requires autohide_bookmarks_toolbar.css */
+
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: safe center !important;
+}
+#PersonalToolbar{
+  --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.2s */
+  /* --toolbarseparator-color: var(--lwt-text-color); /* Bookmark separator color */
+  width: fit-content;
+  align-self: center;
+  border-radius: 3px;
+}
+
+
+/** Miscellaneous Tweaks  ************************************************************************/
+
+/** Remove Extension text from URLBar */
+#identity-box.extensionPage label{display: none !important;}
+
+/** Remove placeholder from URLBar */
+#urlbar-input::placeholder,
+.searchbar-textbox::placeholder { opacity: 0 !important;}
+
+/** Bookmark bar bottom border */
+#navigator-toolbox{ border-bottom: none !important; }
+
+/** FindBar top border */
+.browserContainer > findbar:nth-child(3){border-top: none !important}
+
+/** Popup border color (Lepton context menu border) */
+:root {
+  --arrowpanel-border-color: var(--toolbarbutton-active-background,var(--button-active-bgcolor, var(--card-outline-color))) !important;
+}

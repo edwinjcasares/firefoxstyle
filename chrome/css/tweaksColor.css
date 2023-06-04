@@ -14,5 +14,6 @@ window {
 
   --in-content-link-color: var(--uc-accent-color) !important;
   --urlbar-popup-url-color: var(--uc-accent-color) !important;
+  --checkbox-checked-bgcolor: var(--uc-accent-color) !important;
   --focus-outline-color: var(--uc-accent-color) !important;
 }
