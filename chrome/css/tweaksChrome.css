@@ -43,10 +43,15 @@
 
 /** Miscellaneous Tweaks  ************************************************************************/
 
-/** Remove Extension text from URLBar */
+/** Remove Extension text from URL bar */
 #identity-box.extensionPage label{display: none !important;}
 
-/** Remove placeholder from URLBar */
+/** Remove background from URL bar buttons */
+.identity-box-button {background-color: transparent !important;}
+.identity-box-button:hover {background-color: var(--button-hover-bgcolor) !important;}
+.identity-box-button[open="true"] {background-color: var(--button-active-bgcolor) !important;}
+
+/** Hide placeholder text from URLbar */
 #urlbar-input::placeholder,
 .searchbar-textbox::placeholder { opacity: 0 !important;}
 
@@ -59,4 +64,16 @@
 /** Popup border color (Lepton context menu border) */
 :root {
   --arrowpanel-border-color: var(--toolbarbutton-active-background,var(--button-active-bgcolor, var(--card-outline-color))) !important;
+}
+
+/** New Bookmark save button colors */
+#editBookmarkPanelDoneButton{
+  background-color: var(--in-content-primary-button-background) !important;
+  color: var(--in-content-primary-button-text-color) !important;
+  border-color: var(--in-content-primary-button-border-color) !important;
+}
+/** Centered Manage Extensions text */
+#unified-extensions-manage-extensions .toolbarbutton-text {
+  text-align: center !important;
+  order: -1;
 }
