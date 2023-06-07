@@ -44,7 +44,8 @@
 /** Miscellaneous Tweaks  ************************************************************************/
 
 /** Remove Extension text from URL bar */
-#identity-box.extensionPage label{display: none !important;}
+#identity-box.extensionPage label,
+#identity-box.chromeUI label{display: none !important;}
 
 /** Remove background from URL bar buttons */
 .identity-box-button {background-color: transparent !important;}
@@ -77,3 +78,11 @@
   text-align: center !important;
   order: -1;
 }
+
+/** Broswer content border */
+#appcontent > #tabbrowser-tabbox > #tabbrowser-tabpanels
+> .deck-selected > .browserContainer > .browserStack > browser {
+  border-radius: 10px !important;
+  margin: 0px 0px 2px 0px !important;
+}
+.browserStack { background: var(--toolbar-bgcolor);}
