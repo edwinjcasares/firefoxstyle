@@ -5,7 +5,7 @@
   --uc-sidebar-width: 40px;
   --uc-sidebar-hover-width: 260px;
   --uc-autohide-sidebar-delay: 200ms; /* Wait 0.2s before hiding sidebar */
-  /* --sidebar-background-color: var(--toolbar-bgcolor) !important; /* Sidebar background color*/
+  --sidebar-background-color: var(--toolbar-bgcolor) !important; /* Sidebar background color */
 }
 
 #sidebar,
@@ -34,10 +34,9 @@
 }
 #PersonalToolbar{
   --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.2s */
-  /* --toolbarseparator-color: var(--lwt-text-color); /* Bookmark separator color */
   width: fit-content;
   align-self: center;
-  border-radius: 3px;
+  padding-top: 1px !important;
 }
 
 
@@ -73,16 +72,12 @@
   color: var(--in-content-primary-button-text-color) !important;
   border-color: var(--in-content-primary-button-border-color) !important;
 }
+
 /** Centered Manage Extensions text */
 #unified-extensions-manage-extensions .toolbarbutton-text {
   text-align: center !important;
   order: -1;
 }
 
-/** Broswer content border */
-#appcontent > #tabbrowser-tabbox > #tabbrowser-tabpanels
-> .deck-selected > .browserContainer > .browserStack > browser {
-  border-radius: 10px !important;
-  margin: 0px 0px 2px 0px !important;
-}
+/** Broswer content background */
 .browserStack { background: var(--toolbar-bgcolor);}
