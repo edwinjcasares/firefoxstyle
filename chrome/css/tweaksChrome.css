@@ -8,6 +8,11 @@
   --sidebar-background-color: var(--toolbar-bgcolor) !important; /* Sidebar background color */
 }
 
+#sidebar-box:hover > #sidebar-header,
+#sidebar-box:hover > #sidebar{
+  transition-delay: 100ms !important;
+}
+
 #sidebar,
 #sidebar-header{
   border-inline: 1px solid var(--toolbar-bgcolor);
@@ -34,9 +39,10 @@
 }
 #PersonalToolbar{
   --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.2s */
+  --uc-bm-height: 19px; 
   width: fit-content;
   align-self: center;
-  padding-top: 1px !important;
+  border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -79,5 +85,12 @@
   order: -1;
 }
 
-/** Broswer content background */
+/** Browser content border */
+#appcontent > #tabbrowser-tabbox > #tabbrowser-tabpanels
+> .deck-selected > .browserContainer > .browserStack > browser {
+  border-radius: 4px !important;
+  /* margin: 0px !important; */
+}
+
+/** Browser content background */
 .browserStack { background: var(--toolbar-bgcolor);}
