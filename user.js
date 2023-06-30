@@ -92,3 +92,9 @@ user_pref("browser.urlbar.unitConversion.enabled", true);
 
 // Linux: Sidebar Hover fix
 // user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
+
+// Windows: Ungroup taskbar icons per profile
+user_pref("taskbar.grouping.useprofile", true);
+
+// Homepage NightTab URL
+user_pref("browser.startup.homepage", 'moz-extension://424099b9-dfe0-4452-8891-e459aee0bf8f/index.html');
