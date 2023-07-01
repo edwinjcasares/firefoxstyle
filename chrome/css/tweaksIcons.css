@@ -68,6 +68,11 @@
   width: 1.45em !important;
 }
 
+/* Notion */
+.webextension-browser-action[data-extensionid="{4b547b2c-e114-4344-9b70-09b2fe0785f3}"] {
+  list-style-image: url(./icons/notion.svg) !important;
+}
+
 /** Disabled Extension Icons  ********************************************************************/
 
 /* https://www.reddit.com/r/FirefoxCSS/comments/11k9qa6/comment/jb6gd4a/?utm_source=reddit&utm_medium=web2x&context=3 */
