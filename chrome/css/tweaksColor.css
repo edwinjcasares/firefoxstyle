@@ -4,9 +4,14 @@
 panel,
 dialog,
 window {
+  /** Background colors */
+  --uc-primary-color: #1E1E2E;
+  --uc-secundary-color: #2D2D3D;
+
   /** Accent color */
   --uc-accent-color: #5C7C74;
   --uc-accent-highlight-color: #8aa8a1;
+
   
   --in-content-primary-button-background: var(--uc-accent-color) !important;
   --in-content-primary-button-background-active: var(--uc-accent-color) !important;
@@ -18,4 +23,7 @@ window {
   --checkbox-checked-bgcolor: var(--uc-accent-color) !important;
   --checkbox-checked-active-bgcolor: var(--uc-accent-color) !important;
   --checkbox-checked-hover-bgcolor: var(--uc-accent-highlight-color) !important;
+
+  --in-content-page-background: var(--uc-primary-color) !important;
+  --in-content-box-background: var(--uc-secundary-color) !important;
 }
