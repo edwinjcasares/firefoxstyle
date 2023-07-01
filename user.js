@@ -27,7 +27,7 @@ user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant",      250);//
 user_pref("general.smoothScroll.currentVelocityWeighting",             "1.0");//NSS ["0.25"]
 user_pref("general.smoothScroll.stopDecelerationWeighting",            "1.0");//NSS  ["0.4"]
 
-// ** Lepton Related Options **********************************************************************
+// ** Firefox UI Fix - Proton Related Options **********************************************************************
 
 user_pref("userChrome.theme.proton_color", true);
 user_pref("userChrome.theme.proton_chrome", true); // Need proton_color

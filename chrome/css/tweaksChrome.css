@@ -94,3 +94,9 @@
 
 /** Browser content background */
 .browserStack { background: var(--toolbar-bgcolor);}
+
+/** First toolbar button tweaks */
+/* #nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child { 
+  width: 36px;
+  padding-inline-start: 1px !important;
+} */

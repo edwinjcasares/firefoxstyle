@@ -15,5 +15,8 @@
 /** Menus ********************************************************************/
 @import url("css/hide_menu_items.css");
 
+/** Icons ********************************************************************/
+@import url("css/tweaksIcons.css");
+
 /** Personal CSS tweaks ******************************************************/
 @import url("css/tweaksChrome.css");

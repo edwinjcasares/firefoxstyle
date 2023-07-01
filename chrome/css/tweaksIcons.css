@@ -1,0 +1,97 @@
+/** Extension Icons  *****************************************************************************/
+
+/* Ublock */
+.webextension-browser-action[data-extensionid="uBlock0@raymondhill.net"] {
+  list-style-image: url(./icons/ublock.svg) !important;
+}
+
+#ublock0_raymondhill_net-menuitem-_uBlock0-blockElement > .menu-iconic-left { 
+  content: url(./icons/ublock.svg);
+  -moz-context-properties: fill;
+  fill: currentColor;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Bitwarden */
+.webextension-browser-action[data-extensionid="{446900e4-71c2-419f-a6a7-df9c091e268b}"] {
+  list-style-image: url(./icons/bitwarden.svg) !important;
+}
+
+#_446900e4-71c2-419f-a6a7-df9c091e268b_-menuitem-_root > .menu-iconic-left { 
+  content: url(./icons/bitwarden.svg);
+  -moz-context-properties: fill;
+  fill: currentColor;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Screenshot */
+.webextension-browser-action[data-extensionid="{72cf1cb4-6679-4939-bb21-d4ce36de507a}"] {
+  list-style-image: url(./icons/screenshot.svg) !important;
+}
+
+#_72cf1cb4-6679-4939-bb21-d4ce36de507a_-menuitem-2 > .menu-iconic-left { 
+  content: url(./icons/screenshot.svg);
+  -moz-context-properties: fill;
+  fill: currentColor;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Sidebery */
+.webextension-browser-action[data-extensionid="{3c078156-979c-498b-8990-85f7987dd929}"] {
+  list-style-image: url(./icons/sidebery.svg) !important;
+}
+
+/* Sponsorblock */
+.webextension-browser-action[data-extensionid="sponsorBlocker@ajay.app"] {
+  list-style-image: url(./icons/sponsorblock.svg) !important;
+}
+
+/* Youtube HD */
+.webextension-browser-action[data-extensionid="{7b1bf0b6-a1b9-42b0-b75d-252036438bdc}"] {
+  list-style-image: url(./icons/youtube-hd.svg) !important;
+}
+
+/* Bing Chat for all browsers */
+.webextension-browser-action[data-extensionid="{a9cb10b9-75e9-45c3-8194-d3b2c25bb6a2}"] {
+  list-style-image: url(./icons/bing.svg) !important;
+}
+
+/* Language Tool */
+.webextension-browser-action[data-extensionid="languagetool-webextension@languagetool.org"] {
+  list-style-image: url(./icons/language-tool.svg) !important;
+}
+
+#languagetool-webextension_languagetool_org-menuitem-_languagetool-menu > .menu-iconic-left { 
+  content: url(./icons/language-tool.svg);
+  -moz-context-properties: fill;
+  fill: currentColor;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/** Disabled Extension Icons  ********************************************************************/
+
+/* https://www.reddit.com/r/FirefoxCSS/comments/11k9qa6/comment/jb6gd4a/?utm_source=reddit&utm_medium=web2x&context=3 */
+.unified-extensions-item-action-button[disabled] > .unified-extensions-item-icon{
+  display: none;
+}
+.unified-extensions-item-action-button[disabled]::before{
+  display: -moz-box;
+  height: var(--uei-icon-size);
+  width: var(--uei-icon-size);
+  -moz-context-properties: fill;
+  fill: currentColor;
+}
+
+/* Imagus */
+.unified-extensions-item-action-button[data-extensionid="{00000f2a-7cde-4f20-83ed-434fcb420d71}"]::before {
+  content: url(./icons/imagus.svg);
+}
+
+/* NightTab */
+.unified-extensions-item-action-button[data-extensionid="{47bf427e-c83d-457d-9b3d-3db4118574bd}"]::before {
+  content: url(./icons/nighttab.svg);
+}
