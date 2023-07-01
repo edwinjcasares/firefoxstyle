@@ -79,7 +79,7 @@
   border-color: var(--in-content-primary-button-border-color) !important;
 }
 
-/** Centered Manage Extensions text */
+/** Centered "Manage Extensions" text */
 #unified-extensions-manage-extensions .toolbarbutton-text {
   text-align: center !important;
   order: -1;

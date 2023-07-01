@@ -9,8 +9,7 @@
   content: url(./icons/ublock.svg);
   -moz-context-properties: fill;
   fill: currentColor;
-  width: 16px !important;
-  height: 16px !important;
+  width: 1.45em !important;
 }
 
 /* Bitwarden */
@@ -22,8 +21,7 @@
   content: url(./icons/bitwarden.svg);
   -moz-context-properties: fill;
   fill: currentColor;
-  width: 16px !important;
-  height: 16px !important;
+  width: 1.45em !important;
 }
 
 /* Screenshot */
@@ -35,8 +33,7 @@
   content: url(./icons/screenshot.svg);
   -moz-context-properties: fill;
   fill: currentColor;
-  width: 16px !important;
-  height: 16px !important;
+  width: 1.45em !important;
 }
 
 /* Sidebery */
@@ -68,8 +65,7 @@
   content: url(./icons/language-tool.svg);
   -moz-context-properties: fill;
   fill: currentColor;
-  width: 16px !important;
-  height: 16px !important;
+  width: 1.45em !important;
 }
 
 /** Disabled Extension Icons  ********************************************************************/

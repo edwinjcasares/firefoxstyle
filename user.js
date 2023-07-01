@@ -15,18 +15,6 @@ user_pref("layout.css.backdrop-filter.enabled", true);
 // CSS's `:has()` selector #457
 user_pref("layout.css.has-selector.enabled", true);
 
-// ** Natural Smooth Scrolling V4 "SHARP" *********************************************************
-
-user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS",   12);//NSS    [120]
-user_pref("general.smoothScroll.msdPhysics.enabled",                    true);//NSS  [false]
-user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant",   200);//NSS   [1250]
-user_pref("general.smoothScroll.msdPhysics.regularSpringConstant",       250);//NSS   [1000]
-user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS",           25);//NSS     [12]
-user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio",     "2.0");//NSS    [1.3]
-user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant",      250);//NSS   [2000]
-user_pref("general.smoothScroll.currentVelocityWeighting",             "1.0");//NSS ["0.25"]
-user_pref("general.smoothScroll.stopDecelerationWeighting",            "1.0");//NSS  ["0.4"]
-
 // ** Firefox UI Fix - Proton Related Options **********************************************************************
 
 user_pref("userChrome.theme.proton_color", true);
