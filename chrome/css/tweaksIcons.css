@@ -51,9 +51,9 @@
   list-style-image: url(./icons/youtube-hd.svg) !important;
 }
 
-/* Bing Chat for all browsers */
-.webextension-browser-action[data-extensionid="{a9cb10b9-75e9-45c3-8194-d3b2c25bb6a2}"] {
-  list-style-image: url(./icons/bing.svg) !important;
+/* User-Agent Switcher and Manager */
+.webextension-browser-action[data-extensionid="{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}"] {
+  list-style-image: url(./icons/user-agent-switcher.svg) !important;
 }
 
 /* Language Tool */
@@ -72,6 +72,8 @@
 .webextension-browser-action[data-extensionid="{4b547b2c-e114-4344-9b70-09b2fe0785f3}"] {
   list-style-image: url(./icons/notion.svg) !important;
 }
+
+
 
 /** Disabled Extension Icons  ********************************************************************/
 
