@@ -29,4 +29,5 @@ window {
 
   --in-content-page-background: var(--uc-primary-color) !important;
   --in-content-box-background: var(--uc-secundary-color) !important;
+  --in-content-table-background: var(--uc-secundary-color) !important;
 }
