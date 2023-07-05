@@ -73,7 +73,10 @@
   list-style-image: url(./icons/notion.svg) !important;
 }
 
-
+/* Violent Monkey */
+.webextension-browser-action[data-extensionid="{aecec67f-0d10-4fa7-b7c7-609a2db280cf}"] {
+  list-style-image: url(./icons/violentmonkey.svg) !important;
+}
 
 /** Disabled Extension Icons  ********************************************************************/
 
