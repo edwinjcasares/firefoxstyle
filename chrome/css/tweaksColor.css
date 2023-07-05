@@ -4,23 +4,22 @@
 panel,
 dialog,
 window {
-  /** Background colors */
+  /** Mocha Background colors*/
   --uc-primary-color: #1E1E2E;
   --uc-secundary-color: #2D2D3D;
-
-  /* Nord */
-  /* --uc-primary-color: #20242C; */
-  /* --uc-accent-color: #5e81ac; */
   
+  /** Darker Background colors*/
   /* --uc-primary-color: #1E1C1F; */
   /* --uc-secundary-color: #2D2B2E; */
   
+  /** Moss Accent color */
+  /* --uc-accent-color: #5C7C74; */
+  /* --uc-accent-highlight-color: #90ADA5; */
 
-  /** Accent color */
-  --uc-accent-color: #5C7C74;
-  --uc-accent-highlight-color: #8aa8a1;
+  /** Frost Accent color */
+  --uc-accent-color: #5e81ac;
+  --uc-accent-highlight-color: #A1B5CE;
 
-  
   --in-content-primary-button-background: var(--uc-accent-color) !important;
   --in-content-primary-button-background-active: var(--uc-accent-color) !important;
   --in-content-primary-button-background-hover: var(--uc-accent-highlight-color) !important;
