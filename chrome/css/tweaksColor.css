@@ -7,6 +7,7 @@ window {
   /** Mocha Background colors*/
   --uc-primary-color: #1E1E2E;
   --uc-secundary-color: #2D2D3D;
+  --uc-foreground-color: #AFB8D6;
   
   /** Darker Background colors*/
   /* --uc-primary-color: #1E1C1F; */
@@ -35,4 +36,12 @@ window {
   --in-content-box-background: var(--uc-secundary-color) !important;
   --in-content-table-background: var(--uc-secundary-color) !important;
   --color-accent-primary: var(--uc-accent-color) !important;
+}
+
+div.layout > div.layout-header, 
+div.bookmark-display-name > .bookmark-display-name-text,
+button.bookmark-control-button > span.icon,
+button.group-control-button > span.icon,
+button.toolbar-item > span.icon {
+  color: var(--uc-foreground-color);
 }
