@@ -101,3 +101,8 @@
 .unified-extensions-item-action-button[data-extensionid="{47bf427e-c83d-457d-9b3d-3db4118574bd}"]::before {
   content: url(./icons/nighttab.svg);
 }
+
+/* Tabliss */
+.unified-extensions-item-action-button[data-extensionid="extension@tabliss.io"]::before {
+  content: url(./icons/tabliss.svg);
+}

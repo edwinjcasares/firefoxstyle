@@ -7,9 +7,14 @@ window {
   /** Background colors */
   --uc-primary-color: #1E1E2E;
   --uc-secundary-color: #2D2D3D;
+
+  /* Nord */
+  /* --uc-primary-color: #20242C; */
+  /* --uc-accent-color: #5e81ac; */
   
   /* --uc-primary-color: #1E1C1F; */
   /* --uc-secundary-color: #2D2B2E; */
+  
 
   /** Accent color */
   --uc-accent-color: #5C7C74;
