@@ -9,7 +9,6 @@
     --uc-primary-color: #1E1C1F;
     --uc-secundary-color: #39353B;
     --uc-foreground-color: #E0DEE1;
-
   }
 }
 
@@ -22,7 +21,6 @@
     --uc-primary-color: #1E1E2E;
     --uc-secundary-color: #32324D;
     --uc-foreground-color: #AFB8D6;
-
   }
 }
 
@@ -35,7 +33,6 @@
     --uc-primary-color: #1A1B26;
     --uc-secundary-color: #303146;
     --uc-foreground-color: #AFB8D6;
-
   }
 }
 
@@ -45,7 +42,6 @@
   panel,
   dialog,
   window {
-
     --uc-accent-color: #5C7C74;
     --uc-accent-highlight-color: #90ADA5;
   }
