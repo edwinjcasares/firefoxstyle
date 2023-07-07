@@ -82,6 +82,7 @@
     --in-content-page-background: var(--uc-primary-color) !important;
     --in-content-box-background: var(--uc-secundary-color) !important;
     --in-content-table-background: var(--uc-secundary-color) !important;
+    --in-content-box-info-background: var(--uc-secundary-color) !important;
     --in-content-page-color: var(--uc-foreground-color) !important;
     --color-accent-primary: var(--uc-accent-color) !important;
   }
