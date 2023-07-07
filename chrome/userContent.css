@@ -1,3 +1,6 @@
+/** Firefox UI Fix ***********************************************************/
+@import url("css/lepton/css/leptonContent.css");
+
 /** Color tweaks *************************************************************/
 @import url("css/color_scheme.css");
 

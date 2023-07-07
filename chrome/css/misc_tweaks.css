@@ -52,14 +52,14 @@
 #identity-box.extensionPage label,
 #identity-box.chromeUI label{display: none !important;}
 
-/** Remove background from URL bar buttons */
+/** Remove background from URLbar buttons */
 .identity-box-button {background-color: transparent !important;}
 .identity-box-button:hover {background-color: var(--button-hover-bgcolor) !important;}
 .identity-box-button[open="true"] {background-color: var(--button-active-bgcolor) !important;}
 
 /** Hide placeholder text from URLbar */
 #urlbar-input::placeholder,
-.searchbar-textbox::placeholder { opacity: 0 !important;}
+.searchbar-textbox::placeholder { opacity: 0.25 !important;}
 
 /** Bookmark bar bottom border */
 #navigator-toolbox{ border-bottom: none !important; }
@@ -89,12 +89,6 @@
 
 /** Browser content background */
 .browserStack { background: var(--toolbar-bgcolor);}
-
-/** First toolbar button tweaks */
-/* #nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child { 
-  width: 36px;
-  padding-inline-start: 1px !important;
-} */
 
 /** Remove white flash */
 #tabbrowser-tabbox,

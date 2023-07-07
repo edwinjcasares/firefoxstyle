@@ -84,32 +84,6 @@
     --in-content-table-background: var(--uc-secundary-color) !important;
     --in-content-page-color: var(--uc-foreground-color) !important;
     --color-accent-primary: var(--uc-accent-color) !important;
-
-    /* --uc-menu-bkgnd: var(--arrowpanel-background);
-    --uc-menu-color: var(--arrowpanel-color);
-    --uc-menu-dimmed: var(--arrowpanel-color);
-    --uc-menu-disabled: var(--arrowpanel-color);
-    --arrowpanel-border-color */
-  }
-
-  /* Info Bar Color */
-  .container.infobar {
-    background-color: var(--urlbar-box-bgcolor) !important;
-  }
-  .notification-button {
-    background-color: var(--button-bgcolor) !important;
-  }
-  .notification-button:hover {
-    background-color: var(--button-hover-bgcolor) !important;
-  }
-  .notification-button:hover:active {
-    background-color: var(--button-active-bgcolor) !important;
-  }
-  html|button.ghost-button:not(.semi-transparent):enabled:hover {
-    background-color: var(--button-hover-bgcolor) !important;
-  }
-  html|button.ghost-button:not(.semi-transparent):enabled:hover:active {
-    background-color: var(--in-content-button-background-active) !important;
   }
   
   /* Nighttab tweaks */

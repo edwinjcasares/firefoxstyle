@@ -1,14 +1,12 @@
-/** Hidden Tabs **************************************************************/
-/* @import url("css/mrotherguy/window_control_placeholder_support.css"); */
-/* @import url("css/mrotherguy/hide_tabs_toolbar.css"); */
+/** Firefox UI Fix ***********************************************************/
+@import url("css/lepton/css/leptonChrome.css");
 
 /** Autohide *****************************************************************/
-@import url("css/mrotherguy/autohide_sidebar.css");
-@import url("css/mrotherguy/autohide_bookmarks_toolbar.css");
+@import url("css/mrotherguy/css/autohide_sidebar.css");
+@import url("css/mrotherguy/css/autohide_bookmarks_toolbar.css");
 
 /** Colors tweaks ************************************************************/
 @import url("css/color_scheme.css");
-@import url("css/context_menu_theme.css");
 
 /** Menus ********************************************************************/
 @import url("css/hide_menu_items.css");
