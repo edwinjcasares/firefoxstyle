@@ -15,6 +15,7 @@ user_pref("layout.css.backdrop-filter.enabled", true);
 // CSS's `:has()` selector #457
 user_pref("layout.css.has-selector.enabled", true);
 
+
 // ** Firefox UI Fix - Proton Related Options **********************************************************************
 
 user_pref("userChrome.compatibility.theme", true);
@@ -76,13 +77,17 @@ user_pref("userContent.page.proton", true); // Need proton_color
 
 user_pref("userChrome.hidden.tabbar", true);
 
-// ** Personal Options ****************************************************************************
 
-// Sharpen Scrolling
-user_pref("mousewheel.min_line_scroll_amount", 10); //        5
-user_pref("general.smoothScroll.mouseWheel.durationMinMS", 80); //       50
-user_pref("general.smoothScroll.currentVelocityWeighting", "0.15"); //   "0.25"
-user_pref("general.smoothScroll.stopDecelerationWeighting", "0.6"); //    "0.4"
+// ** Linux Compatibility *************************************************************************
+
+// Linux: Sidebar Hover fix
+// user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
+
+// Linux's non native titlebar button
+// user_pref("userChrome.compatibility.os.linux_non_native_titlebar_button", true);
+
+
+// ** Personal Options ****************************************************************************
 
 // Microphone indicator
 user_pref("privacy.webrtc.legacyGlobalIndicator", false);
@@ -105,18 +110,16 @@ user_pref("browser.urlbar.suggest.calculator", true);
 // Integrated unit convertor at urlbar
 user_pref("browser.urlbar.unitConversion.enabled", true);
 
-// Linux: Sidebar Hover fix
-// user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
-
 // Windows: Ungroup taskbar icons per profile
 user_pref("taskbar.grouping.useprofile", true);
+
 
 // ** Personal Tweaks *****************************************************************************
 
 // Select one color scheme
 user_pref("color_scheme.darker", false);
-user_pref("color_scheme.mocha", false);
-user_pref("color_scheme.tokyo_night", true);
+user_pref("color_scheme.mocha", true);
+user_pref("color_scheme.tokyo_night", false);
 
 // Select one accent color
 user_pref("color_scheme.accent_moss", false);

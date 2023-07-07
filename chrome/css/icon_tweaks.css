@@ -68,6 +68,11 @@
   width: 1.45em !important;
 }
 
+/* Dark Reader */
+.webextension-browser-action[data-extensionid="addon@darkreader.org"] {
+  list-style-image: url(./icons/dark_reader.svg) !important;
+}
+
 /* Notion */
 .webextension-browser-action[data-extensionid="{4b547b2c-e114-4344-9b70-09b2fe0785f3}"] {
   list-style-image: url(./icons/notion.svg) !important;
