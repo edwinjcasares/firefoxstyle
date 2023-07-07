@@ -1,0 +1,123 @@
+/** Color Tweaks *********************************************************************************/
+
+/** Darker background colors*/
+@supports -moz-bool-pref("color_scheme.darker") {
+  :root,
+  panel,
+  dialog,
+  window {
+    --uc-primary-color: #1E1C1F;
+    --uc-secundary-color: #39353B;
+    --uc-foreground-color: #E0DEE1;
+
+  }
+}
+
+/** Mocha background colors*/
+@supports -moz-bool-pref("color_scheme.mocha") {
+  :root,
+  panel,
+  dialog,
+  window {
+    --uc-primary-color: #1E1E2E;
+    --uc-secundary-color: #32324D;
+    --uc-foreground-color: #AFB8D6;
+
+  }
+}
+
+/** Tokyo Night background colors*/
+@supports -moz-bool-pref("color_scheme.tokyo_night") {
+  :root,
+  panel,
+  dialog,
+  window {
+    --uc-primary-color: #1A1B26;
+    --uc-secundary-color: #303146;
+    --uc-foreground-color: #AFB8D6;
+
+  }
+}
+
+/** Moss accent color */
+@supports -moz-bool-pref("color_scheme.accent_moss") {
+  :root,
+  panel,
+  dialog,
+  window {
+
+    --uc-accent-color: #5C7C74;
+    --uc-accent-highlight-color: #90ADA5;
+  }
+}
+
+/** Frost accent color */
+@supports -moz-bool-pref("color_scheme.accent_frost") {
+  :root,
+  panel,
+  dialog,
+  window {
+    --uc-accent-color: #5e81ac;
+    --uc-accent-highlight-color: #A1B5CE;
+  }
+}
+
+/** Default color tweaks */
+@supports -moz-bool-pref("color_scheme.apply_tweaks") {
+  :root,
+  panel,
+  dialog,
+  window {
+    --in-content-primary-button-background: var(--uc-accent-color) !important;
+    --in-content-primary-button-background-active: var(--uc-accent-color) !important;
+    --in-content-primary-button-background-hover: var(--uc-accent-highlight-color) !important;
+
+    --focus-outline-color: var(--uc-accent-color) !important;
+    --in-content-link-color: var(--uc-accent-color) !important;
+    --urlbar-popup-url-color: var(--uc-accent-color) !important;
+    --checkbox-checked-bgcolor: var(--uc-accent-color) !important;
+    --checkbox-checked-active-bgcolor: var(--uc-accent-color) !important;
+    --checkbox-checked-hover-bgcolor: var(--uc-accent-highlight-color) !important;
+
+    --in-content-page-background: var(--uc-primary-color) !important;
+    --in-content-box-background: var(--uc-secundary-color) !important;
+    --in-content-table-background: var(--uc-secundary-color) !important;
+    --in-content-page-color: var(--uc-foreground-color) !important;
+    --color-accent-primary: var(--uc-accent-color) !important;
+
+    /* --uc-menu-bkgnd: var(--arrowpanel-background);
+    --uc-menu-color: var(--arrowpanel-color);
+    --uc-menu-dimmed: var(--arrowpanel-color);
+    --uc-menu-disabled: var(--arrowpanel-color);
+    --arrowpanel-border-color */
+  }
+
+  /* Info Bar Color */
+  .container.infobar {
+    background-color: var(--urlbar-box-bgcolor) !important;
+  }
+  .notification-button {
+    background-color: var(--button-bgcolor) !important;
+  }
+  .notification-button:hover {
+    background-color: var(--button-hover-bgcolor) !important;
+  }
+  .notification-button:hover:active {
+    background-color: var(--button-active-bgcolor) !important;
+  }
+  html|button.ghost-button:not(.semi-transparent):enabled:hover {
+    background-color: var(--button-hover-bgcolor) !important;
+  }
+  html|button.ghost-button:not(.semi-transparent):enabled:hover:active {
+    background-color: var(--in-content-button-background-active) !important;
+  }
+  
+  /* Nighttab tweaks */
+  div.layout > div.layout-header, 
+  div.bookmark-display-name > .bookmark-display-name-text,
+  button.bookmark-control-button > span.icon,
+  button.group-control-button > span.icon,
+  button.toolbar-item > span.icon {
+    color: var(--uc-foreground-color);
+  }
+}

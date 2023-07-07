@@ -1,0 +1,63 @@
+/** Context Menu Theme ***************************************************************************/
+
+html#main-window menupopup:not(.in-menulist) {
+  --menu-color: var(--arrowpanel-color,) !important;
+  --menu-background-color: var(--arrowpanel-background) !important;
+  --menu-border-color: var(--arrowpanel-border-color) !important;
+  --menuitem-hover-background-color: var(--toolbarbutton-hover-background) !important;
+  --menu-disabled-color: color-mix(in srgb, var(--menu-color) 40%, transparent) !important;
+  --menuitem-disabled-hover-background-color: color-mix(in srgb,var(--menuitem-hover-background-color) 40%,transparent) !important;
+
+  --panel-color: var(--menu-color) !important;
+  --panel-background: var(--menu-background-color) !important;
+  --panel-border-color: var(--menu-border-color) !important;
+}
+
+html#main-window menupopup:not(.in-menulist):not([placespopup]) menuseparator,
+html#main-window menupopup:not(.in-menulist)[placespopup] menuseparator::before {
+  border-top: 1px solid var(--menu-border-color) !important;
+}
+
+html#main-window menupopup:not(.in-menulist) menu[disabled="true"],
+html#main-window menupopup:not(.in-menulist) menu[_moz-menuactive="true"][disabled="true"],
+html#main-window menupopup:not(.in-menulist) menuitem[disabled="true"],
+html#main-window menupopup:not(.in-menulist) menuitem[_moz-menuactive="true"][disabled="true"] {
+  color: var(--menu-disabled-color) !important;
+}
+
+html#main-window menupopup:not(.in-menulist) menu[_moz-menuactive="true"]:not([disabled="true"]),
+html#main-window menupopup:not(.in-menulist) menuitem[_moz-menuactive="true"]:not([disabled="true"]) {
+  background-color: var(--menuitem-hover-background-color) !important;
+  color: var(--menu-color) !important;
+}
+
+html#main-window
+  menupopup
+  #context-navigation
+  > .menuitem-iconic[_moz-menuactive="true"]
+  > .menu-iconic-left
+  > .menu-iconic-icon {
+  background-color: var(--menuitem-hover-background-color) !important;
+}
+
+html#main-window menupopup #context-navigation > .menuitem-iconic[_moz-menuactive="true"],
+html#main-window
+  menupopup
+  #context-navigation
+  > .menuitem-iconic[_moz-menuactive="true"][disabled="true"]
+  > .menu-iconic-left
+  > .menu-iconic-icon {
+  background-color: transparent !important;
+}
+
+window:is(#bookmarksPanel, #history-panel)[lwt-sidebar="true"] menupopup {
+  --panel-color: var(--lwt-sidebar-text-color) !important;
+  --panel-background: var(--lwt-sidebar-background-color) !important;
+}
+
+window:is(#bookmarksPanel, #history-panel)[lwt-sidebar="true"] menu[_moz-menuactive="true"]:not([disabled="true"]),
+window:is(#bookmarksPanel, #history-panel)[lwt-sidebar="true"]
+  menuitem[_moz-menuactive="true"]:not([disabled="true"]) {
+  --menuitem-hover-background-color: color-mix(in srgb,currentColor 17%,transparent);
+  background-color: var(--menuitem-hover-background-color) !important;
+}

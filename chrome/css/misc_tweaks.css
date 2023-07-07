@@ -67,11 +67,6 @@
 /** FindBar top border */
 .browserContainer > findbar:nth-child(3){border-top: none !important}
 
-/** Popup border color (Lepton context menu border) */
-:root {
-  --arrowpanel-border-color: var(--toolbarbutton-active-background,var(--button-active-bgcolor, var(--card-outline-color))) !important;
-}
-
 /** New Bookmark save button colors */
 #editBookmarkPanelDoneButton{
   background-color: var(--in-content-primary-button-background) !important;
@@ -100,3 +95,11 @@
   width: 36px;
   padding-inline-start: 1px !important;
 } */
+
+/** Remove white flash */
+#tabbrowser-tabbox,
+#tabbrowser-tabpanels,
+browser[type="content-primary"],
+browser[type="content"] > html {
+  background: var(--in-content-page-background) !important;
+}

@@ -1,22 +1,20 @@
-/** Firefox UI Fix ***********************************************************/
-@import url("css/leptonChrome.css");
-
 /** Hidden Tabs **************************************************************/
-@import url("css/window_control_placeholder_support.css");
-@import url("css/hide_tabs_toolbar.css");
-
-/** Colors tweaks ************************************************************/
-@import url("css/tweaksColor.css");
+/* @import url("css/mrotherguy/window_control_placeholder_support.css"); */
+/* @import url("css/mrotherguy/hide_tabs_toolbar.css"); */
 
 /** Autohide *****************************************************************/
-@import url("css/autohide_sidebar.css");
-@import url("css/autohide_bookmarks_toolbar.css");
+@import url("css/mrotherguy/autohide_sidebar.css");
+@import url("css/mrotherguy/autohide_bookmarks_toolbar.css");
+
+/** Colors tweaks ************************************************************/
+@import url("css/color_scheme.css");
+@import url("css/context_menu_theme.css");
 
 /** Menus ********************************************************************/
 @import url("css/hide_menu_items.css");
 
 /** Icons ********************************************************************/
-@import url("css/tweaksIcons.css");
+@import url("css/icon_tweaks.css");
 
 /** Personal CSS tweaks ******************************************************/
-@import url("css/tweaksChrome.css");
+@import url("css/misc_tweaks.css");
