@@ -117,9 +117,9 @@ user_pref("taskbar.grouping.useprofile", true);
 // ** Personal Tweaks *****************************************************************************
 
 // Select one color scheme
-user_pref("color_scheme.darker", false);
-user_pref("color_scheme.mocha", true);
-user_pref("color_scheme.tokyo_night", false);
+user_pref("color_scheme.dark", false);
+user_pref("color_scheme.nordic", true);
+user_pref("color_scheme.mocha", false);
 
 // Select one accent color
 user_pref("color_scheme.accent_moss", false);

@@ -1,14 +1,26 @@
 /** Color Tweaks *********************************************************************************/
 
-/** Darker background colors*/
-@supports -moz-bool-pref("color_scheme.darker") {
+/** Simple Dark background colors*/
+@supports -moz-bool-pref("color_scheme.dark") {
   :root,
   panel,
   dialog,
   window {
-    --uc-primary-color: #1E1C1F;
-    --uc-secundary-color: #39353B;
-    --uc-foreground-color: #E0DEE1;
+    --uc-primary-color: #191919;
+    --uc-secundary-color: #202020; /* +3% lightness */
+    --uc-foreground-color: #C7C7C7;
+  }
+}
+
+/** Nordic background colors*/
+@supports -moz-bool-pref("color_scheme.nordic") {
+  :root,
+  panel,
+  dialog,
+  window {
+    --uc-primary-color: #15181E;
+    --uc-secundary-color: #1C1F26; /* +3% lightness */
+    --uc-foreground-color: #B7C2D7;
   }
 }
 
@@ -18,32 +30,9 @@
   panel,
   dialog,
   window {
-    --uc-primary-color: #1E1E2E;
-    --uc-secundary-color: #32324D;
-    --uc-foreground-color: #AFB8D6;
-  }
-}
-
-/** Tokyo Night background colors*/
-@supports -moz-bool-pref("color_scheme.tokyo_night") {
-  :root,
-  panel,
-  dialog,
-  window {
-    --uc-primary-color: #1A1B26;
-    --uc-secundary-color: #303146;
-    --uc-foreground-color: #AFB8D6;
-  }
-}
-
-/** Moss accent color */
-@supports -moz-bool-pref("color_scheme.accent_moss") {
-  :root,
-  panel,
-  dialog,
-  window {
-    --uc-accent-color: #5C7C74;
-    --uc-accent-highlight-color: #90ADA5;
+    --uc-primary-color: #14141F;
+    --uc-secundary-color: #1A1A28; /* +3% lightness */
+    --uc-foreground-color: #A3B4EB;
   }
 }
 
@@ -54,7 +43,18 @@
   dialog,
   window {
     --uc-accent-color: #5e81ac;
-    --uc-accent-highlight-color: #A1B5CE;
+    --uc-accent-highlight-color: #A1B5CE; /* +20% lightness */
+  }
+}
+
+/** Moss accent color */
+@supports -moz-bool-pref("color_scheme.accent_moss") {
+  :root,
+  panel,
+  dialog,
+  window {
+    --uc-accent-color: #587E75;
+    --uc-accent-highlight-color: #8DB0A7; /* +20% lightness */
   }
 }
 
