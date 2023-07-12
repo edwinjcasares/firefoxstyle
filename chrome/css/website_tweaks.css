@@ -1,6 +1,0 @@
-/* Bing Chat */
-@-moz-document domain("bing.com") {
-  div.fade.top, div.fade.bottom{
-    display: none !important;
-  }
-}

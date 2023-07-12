@@ -68,19 +68,9 @@
   width: 1.45em !important;
 }
 
-/* Dark Reader */
-.webextension-browser-action[data-extensionid="addon@darkreader.org"] {
-  list-style-image: url(./icons/dark_reader.svg) !important;
-}
-
 /* Notion */
 .webextension-browser-action[data-extensionid="{4b547b2c-e114-4344-9b70-09b2fe0785f3}"] {
   list-style-image: url(./icons/notion.svg) !important;
-}
-
-/* Violent Monkey */
-.webextension-browser-action[data-extensionid="{aecec67f-0d10-4fa7-b7c7-609a2db280cf}"] {
-  list-style-image: url(./icons/violentmonkey.svg) !important;
 }
 
 /** Disabled Extension Icons  ********************************************************************/

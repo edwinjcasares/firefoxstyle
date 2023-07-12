@@ -1,6 +1,6 @@
 /** Color Tweaks *********************************************************************************/
 
-/** Simple Dark background colors*/
+/** Dark colors*/
 @supports -moz-bool-pref("color_scheme.dark") {
   :root,
   panel,
@@ -12,7 +12,7 @@
   }
 }
 
-/** Nordic background colors*/
+/** Nordic colors*/
 @supports -moz-bool-pref("color_scheme.nordic") {
   :root,
   panel,
@@ -24,7 +24,7 @@
   }
 }
 
-/** Mocha background colors*/
+/** Mocha colors*/
 @supports -moz-bool-pref("color_scheme.mocha") {
   :root,
   panel,
@@ -33,6 +33,18 @@
     --uc-primary-color: #14141F;
     --uc-secundary-color: #1A1A28; /* +3% lightness */
     --uc-foreground-color: #A3B4EB;
+  }
+}
+
+/** Tokyo Night colors*/
+@supports -moz-bool-pref("color_scheme.tokyo") {
+  :root,
+  panel,
+  dialog,
+  window {
+    --uc-primary-color: #15151E;
+    --uc-secundary-color: #1A1B26; /* +3% lightness */
+    --uc-foreground-color: #B3BADB;
   }
 }
 

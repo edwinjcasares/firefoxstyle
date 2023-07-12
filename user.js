@@ -124,6 +124,7 @@ user_pref("taskbar.grouping.useprofile", true);
 user_pref("color_scheme.dark", false);
 user_pref("color_scheme.nordic", true);
 user_pref("color_scheme.mocha", false);
+user_pref("color_scheme.tokyo", false);
 
 // Select one accent color
 user_pref("color_scheme.accent_moss", false);
