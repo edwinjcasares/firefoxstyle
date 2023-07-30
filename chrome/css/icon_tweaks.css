@@ -73,6 +73,11 @@
   list-style-image: url(./icons/notion.svg) !important;
 }
 
+/* Dark Reader */
+.webextension-browser-action[data-extensionid="addon@darkreader.org"] {
+  list-style-image: url(./icons/dark_reader.svg) !important;
+}
+
 /** Disabled Extension Icons  ********************************************************************/
 
 /* https://www.reddit.com/r/FirefoxCSS/comments/11k9qa6/comment/jb6gd4a/?utm_source=reddit&utm_medium=web2x&context=3 */
