@@ -9627,11 +9627,14 @@
       max-width: var(--uc-sidebar-width) !important;
       will-change: min-width, max-width;
     }
-    #sidebar-box:is(:hover, :focus-within) {
+    #sidebar-box:is(:hover, :focus-within),
+    #sidebar-box:has(#sidebar-switcher-target.active) {
       --uc-sidebar-shadow-width: calc(var(--uc-sidebar-activate-width) - var(--uc-sidebar-width));
     }
     #sidebar-box:is(:hover, :focus-within) > #sidebar-header,
-    #sidebar-box:is(:hover, :focus-within) > #sidebar {
+    #sidebar-box:is(:hover, :focus-within) > #sidebar,
+    #sidebar-box:has(#sidebar-switcher-target.active) > #sidebar-header,
+    #sidebar-box:has(#sidebar-switcher-target.active) > #sidebar {
       min-width: var(--uc-sidebar-activate-width) !important;
       max-width: var(--uc-sidebar-activate-width) !important;
     }
@@ -9657,14 +9660,17 @@
         transition: min-width var(--uc-autohide-sidebar-speed) var(--animation-easing-function)
           var(--uc-autohide-sidebar-delay) !important;
       }
-      #sidebar-box:is(:hover, :focus-within) {
+      #sidebar-box:is(:hover, :focus-within),
+      #siebar-box:has(#sidebar-switcher-target.active) {
         transition: margin-inline-start var(--uc-autohide-sidebar-speed) var(--animation-easing-function),
           opacity var(--uc-autohide-sidebar-speed) ease-in-out,
           box-shadow var(--uc-autohide-sidebar-speed) var(--animation-easing-function) var(--uc-autohide-sidebar-speed),
           visibility 0s linear !important;
       }
       #sidebar-box:is(:hover, :focus-within) > #sidebar-header,
-      #sidebar-box:is(:hover, :focus-within) > #sidebar {
+      #sidebar-box:is(:hover, :focus-within) > #sidebar,
+      #siebar-box:has(#sidebar-switcher-target.active) > #sidebar-header,
+      #siebar-box:has(#sidebar-switcher-target.active) > #sidebar {
         transition-delay: 0ms !important;
       }
       :root[inFullscreen="true"] #sidebar-box {
@@ -9674,7 +9680,8 @@
           box-shadow calc(var(--uc-autohide-fullscreen-sidebar-speed) + 0.05s) var(--animation-easing-function),
           visibility 0s linear !important;
       }
-      :root[inFullscreen="true"] #sidebar-box:is(:hover, :focus-within) {
+      :root[inFullscreen="true"] #sidebar-box:is(:hover, :focus-within),
+      :root[inFullscreen="true"] #sidebar-box:has(#sidebar-switcher-target.active) {
         transition-delay: 0ms !important;
       }
     }
@@ -9687,7 +9694,8 @@
       overflow: hidden;
       will-change: min-width, max-width;
     }
-    #sidebar-box:is(:hover, :focus-within) {
+    #sidebar-box:is(:hover, :focus-within),
+    #sidebar-box:has(#sidebar-switcher-target.active) {
       min-width: var(--uc-sidebar-activate-width) !important;
       max-width: var(--uc-sidebar-activate-width) !important;
     }
@@ -9711,7 +9719,8 @@
             var(--uc-autohide-sidebar-delay),
           max-width var(--uc-autohide-sidebar-speed) var(--animation-easing-function) var(--uc-autohide-sidebar-delay) !important;
       }
-      #sidebar-box:is(:hover, :focus-within) {
+      #sidebar-box:is(:hover, :focus-within),
+      #sidebar-box:has(#sidebar-switcher-target.active) {
         transition-delay: 0ms !important;
       }
       :root[inFullscreen="true"] #sidebar-box {
@@ -9721,7 +9730,8 @@
       :root[inFullscreen="true"] #sidebar-box[positionend="true"] {
         transition-property: margin-inline-end !important;
       }
-      :root[inFullscreen="true"] #sidebar-box:is(:hover, :focus-within) {
+      :root[inFullscreen="true"] #sidebar-box:is(:hover, :focus-within),
+      :root[inFullscreen="true"] #sidebar-box:has(#sidebar-switcher-target.active) {
         transition-delay: 0ms !important;
       }
     }
@@ -10619,23 +10629,41 @@
       list-style-image: url("../icons/broom.svg");
     }
     /*= sidebarMenu-popup ========================================================*/
-    #identity-popup-more-info {
+    #identity-popup-more-info.subviewbutton {
       list-style-image: url("chrome://global/skin/icons/info.svg");
     }
-    #sidebar-switcher-bookmarks {
+    #identity-popup-more-info:is(menuitem) {
+      --menuitem-image: url("chrome://global/skin/icons/info.svg");
+    }
+    #sidebar-switcher-bookmarks.subviewbutton {
       list-style-image: url("chrome://browser/skin/bookmark.svg");
     }
-    #sidebar-switcher-history {
+    #sidebar-switcher-bookmarks:is(menuitem) {
+      --menuitem-image: url("chrome://browser/skin/bookmark.svg");
+    }
+    #sidebar-switcher-history.subviewbutton {
       list-style-image: url("chrome://browser/skin/history.svg");
     }
-    #sidebar-switcher-tabs {
+    #sidebar-switcher-history:is(menuitem) {
+      --menuitem-image: url("chrome://browser/skin/history.svg");
+    }
+    #sidebar-switcher-tabs.subviewbutton {
       list-style-image: url("../icons/synced-tabs.svg");
     }
-    #sidebar-reverse-position {
+    #sidebar-switcher-tabs:is(menuitem) {
+      --menuitem-image: url("../icons/synced-tabs.svg");
+    }
+    #sidebar-reverse-position.subviewbutton {
       list-style-image: var(--uc-sidebar-icon-reverse);
     }
-    #sidebarMenu-popup > .subviewbutton[data-l10n-id="sidebar-menu-close"] {
+    #sidebar-reverse-position:is(menuitem) {
+      --menuitem-image: var(--uc-sidebar-icon-reverse);
+    }
+    #sidebarMenu-popup > *.subviewbutton[data-l10n-id="sidebar-menu-close"] {
       list-style-image: url("chrome://global/skin/icons/close.svg");
+    }
+    #sidebarMenu-popup > *:is(menuitem)[data-l10n-id="sidebar-menu-close"] {
+      --menuitem-image: url("chrome://global/skin/icons/close.svg");
     }
     /*= unified-extensions-view ===================================================*/
     #unified-extensions-manage-extensions {
@@ -10683,6 +10711,7 @@
     .openintabs-menuitem,
     #blockedPopupDontShowMessage,
     #BMB_viewBookmarksToolbar,
+    #sidebarMenu-popup:is(menupopup),
     #context_openANewTab.tabmix-newtab-menu-icon {
       /* Color */
       -moz-context-properties: fill, fill-opacity, stroke !important;
@@ -10740,9 +10769,20 @@
     .openintabs-menuitem,
     #blockedPopupDontShowMessage,
     #BMB_viewBookmarksToolbar,
+    #sidebarMenu-popup:is(menupopup),
     #context_openANewTab.tabmix-newtab-menu-icon {
       background-position: var(--uc-menu-background-position) var(--context-menu-background-padding) center !important;
       padding-inline-start: var(--context-menu-background-padding) !important;
+    }
+    #sidebarMenu-popup:is(menupopup):not(panel) {
+      --context-menu-background-padding: var(--context-menu-background-padding-default);
+      padding-inline-start: 0 !important;
+    }
+    :not(menu, #ContentSelectDropdown, #context-navigation)
+      > #sidebarMenu-popup:is(menupopup):not(panel)
+      > menuitem:not(.menuitem-iconic, .bookmark-item, .in-menulist, [checked="true"]) {
+      padding-inline-start: 28px !important;
+      margin-inline-start: var(--arrowpanel-menuitem-margin-inline) !important;
     }
     /* Menubar */
     @supports -moz-bool-pref("userChrome.icon.global_menubar") {
@@ -10895,6 +10935,7 @@
         .openintabs-menuitem,
         #blockedPopupDontShowMessage,
         #BMB_viewBookmarksToolbar,
+        #sidebarMenu-popup:is(menupopup),
         #context_openANewTab.tabmix-newtab-menu-icon {
           background-position: left var(--context-menu-background-padding) center !important;
           padding-inline-start: 0 !important;
@@ -10920,6 +10961,7 @@
         .openintabs-menuitem,
         #blockedPopupDontShowMessage,
         #BMB_viewBookmarksToolbar,
+        #sidebarMenu-popup:is(menupopup),
         #context_openANewTab.tabmix-newtab-menu-icon {
           padding-inline-start: var(--menu-background-padding-default) !important;
           margin-left: 0 !important;
@@ -11650,7 +11692,7 @@
         --menuitem-image: url("../icons/checkmark-circle.svg");
       }
       .downloadUseSystemDefaultMenuItem {
-        --menuitem-image: url("chrome://browser/skin/open.svg");
+        --menuitem-image: url("../icons/toolbarButton-upload.svg");
       }
       .downloadAlwaysUseSystemDefaultMenuItem {
         /* checkbox */
@@ -12028,7 +12070,7 @@
         --menuitem-image: url("chrome://browser/skin/privateBrowsing.svg");
       }
       #menu_openFile {
-        --menuitem-image: url("chrome://browser/skin/open.svg");
+        --menuitem-image: url("../icons/toolbarButton-upload.svg");
       }
       #menu_savePage {
         --menuitem-image: url("../icons/toolbarButton-download.svg");
@@ -12165,6 +12207,9 @@
       }
       #hiddenTabsMenu {
         --menuitem-image: url("../icons/eye-hide.svg");
+      }
+      #menu_searchHistory {
+        --menuitem-image: url("chrome://global/skin/icons/search-glass.svg");
       }
       #historyUndoMenu {
         --menuitem-image: url("chrome://browser/skin/tab.svg");
@@ -12305,6 +12350,11 @@
       #orgUndo {
         --menuitem-image: url("../icons/undo.svg");
       }
+      @supports -moz-bool-pref("userChrome.icon.menu.full") {
+        #orgRedo {
+          --menuitem-image: url("../icons/redo.svg");
+        }
+      }
       #orgCut {
         --menuitem-image: url("chrome://browser/skin/edit-cut.svg");
       }
@@ -12332,13 +12382,18 @@
       }
       /*= maintenanceButtonPopup ===================================================*/
       #backupBookmarks {
-        --menuitem-image: url("chrome://devtools/skin/images/datastore.svg");
+        --menuitem-image: url("../icons/datastore.svg");
+      }
+      @supports -moz-bool-pref("userChrome.icon.menu.full") {
+        #fileRestoreMenu {
+          --menuitem-image: url("../icons/datarestore.svg");
+        }
       }
       #fileImport {
         --menuitem-image: url("../icons/toolbarButton-download.svg");
       }
       #fileExport {
-        --menuitem-image: url("chrome://browser/skin/open.svg");
+        --menuitem-image: url("../icons/toolbarButton-upload.svg");
       }
       #browserImport {
         --menuitem-image: url("chrome://browser/skin/import.svg");

@@ -94,13 +94,4 @@
     --in-content-page-color: var(--uc-foreground-color) !important;
     --color-accent-primary: var(--uc-accent-color) !important;
   }
-  
-  /* Nighttab tweaks */
-  div.layout > div.layout-header, 
-  div.bookmark-display-name > .bookmark-display-name-text,
-  button.bookmark-control-button > span.icon,
-  button.group-control-button > span.icon,
-  button.toolbar-item > span.icon {
-    color: var(--uc-foreground-color);
-  }
 }

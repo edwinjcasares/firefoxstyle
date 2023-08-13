@@ -31,20 +31,12 @@
 
 
 /** Bookmarks Bar ********************************************************************************/
-/** Requires autohide_bookmarks_toolbar.css */
 
-#PlacesToolbarItems {
+/** Centered */
+/* #PlacesToolbarItems {
   display: flex !important;
   justify-content: safe center !important;
-}
-#PersonalToolbar{
-  --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.2s */
-  --uc-bm-height: 19px; 
-  width: fit-content;
-  align-self: center;
-  border-radius: 0px 0px 4px 4px;
-}
-
+} */
 
 /** Miscellaneous Tweaks  ************************************************************************/
 
@@ -59,7 +51,7 @@
 
 /** Hide placeholder text from URLbar */
 #urlbar-input::placeholder,
-.searchbar-textbox::placeholder { opacity: 0.25 !important;}
+.searchbar-textbox::placeholder { opacity: 0 !important;}
 
 /** Bookmark bar bottom border */
 #navigator-toolbox{ border-bottom: none !important; }
@@ -74,21 +66,10 @@
   border-color: var(--in-content-primary-button-border-color) !important;
 }
 
-/** Centered "Manage Extensions" text */
+/** "Manage Extensions" icon */
 #unified-extensions-manage-extensions .toolbarbutton-text {
-  text-align: center !important;
   order: -1;
 }
-
-/** Browser content border */
-#appcontent > #tabbrowser-tabbox > #tabbrowser-tabpanels
-> .deck-selected > .browserContainer > .browserStack > browser {
-  border-radius: 4px !important;
-  /* margin: 0px !important; */
-}
-
-/** Browser content background */
-.browserStack { background: var(--toolbar-bgcolor);}
 
 /** Remove white flash */
 #tabbrowser-tabbox,
