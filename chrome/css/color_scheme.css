@@ -9,6 +9,7 @@
     --uc-primary-color: #191919;
     --uc-secundary-color: #202020; /* +3% lightness */
     --uc-foreground-color: #C7C7C7;
+    --uc-foreground-color-light: #EBEBEB; /* +14% lightness */
   }
 }
 
@@ -21,6 +22,7 @@
     --uc-primary-color: #15181E;
     --uc-secundary-color: #1C1F26; /* +3% lightness */
     --uc-foreground-color: #B7C2D7;
+    --uc-foreground-color-light: #E5E9F0; /* +14% lightness */
   }
 }
 
@@ -33,6 +35,7 @@
     --uc-primary-color: #14141F;
     --uc-secundary-color: #1A1A28; /* +3% lightness */
     --uc-foreground-color: #A3B4EB;
+    --uc-foreground-color-light: #DEE4F8; /* +14% lightness */
   }
 }
 
@@ -45,6 +48,7 @@
     --uc-primary-color: #15151E;
     --uc-secundary-color: #1A1B26; /* +3% lightness */
     --uc-foreground-color: #B3BADB;
+    --uc-foreground-color-light: #E3E6F2; /* +14% lightness */
   }
 }
 

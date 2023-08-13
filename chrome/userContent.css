@@ -3,3 +3,8 @@
 
 /** Color tweaks *************************************************************/
 @import url("css/color_scheme.css");
+
+/** Content tweaks ***********************************************************/
+@import url("css/color_scheme.css");
+
+@import url("css/content_tweaks.css");
