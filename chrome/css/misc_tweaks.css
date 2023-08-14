@@ -31,12 +31,19 @@
 
 
 /** Bookmarks Bar ********************************************************************************/
+/** Requires autohide_bookmarks_toolbar.css */
 
-/** Centered */
-/* #PlacesToolbarItems {
+#PlacesToolbarItems {
   display: flex !important;
   justify-content: safe center !important;
-} */
+}
+#PersonalToolbar{
+  --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.2s */
+  --uc-bm-height: 19px; 
+  width: fit-content;
+  align-self: center;
+  border-radius: 0px 0px 4px 4px;
+}
 
 /** Miscellaneous Tweaks  ************************************************************************/
 
@@ -71,15 +78,25 @@
   order: -1;
 }
 
+/** Multiselected tab text */
+.tabbrowser-tab[multiselected="true"]:not([selected]) {
+  color: inherit !important;
+}
+
+/** Browser content border */
+#appcontent > #tabbrowser-tabbox > #tabbrowser-tabpanels
+> .deck-selected > .browserContainer > .browserStack > browser {
+  border-radius: 4px !important;
+  /* margin: 0px !important; */
+}
+
+/** Browser content background */
+.browserStack { background: var(--toolbar-bgcolor);}
+
 /** Remove white flash */
 #tabbrowser-tabbox,
 #tabbrowser-tabpanels,
 browser[type="content-primary"],
 browser[type="content"] > html {
   background: var(--in-content-page-background) !important;
-}
-
-/** Multiselected tab text */
-.tabbrowser-tab[multiselected="true"]:not([selected]) {
-  color: inherit !important;
 }
