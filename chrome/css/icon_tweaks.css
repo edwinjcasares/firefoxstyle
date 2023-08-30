@@ -51,11 +51,6 @@
   list-style-image: url(./icons/youtube-hd.svg) !important;
 }
 
-/* User-Agent Switcher and Manager */
-.webextension-browser-action[data-extensionid="{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}"] {
-  list-style-image: url(./icons/user-agent-switcher.svg) !important;
-}
-
 /* Language Tool */
 .webextension-browser-action[data-extensionid="languagetool-webextension@languagetool.org"] {
   list-style-image: url(./icons/language-tool.svg) !important;
@@ -78,6 +73,16 @@
   list-style-image: url(./icons/dark_reader.svg) !important;
 }
 
+/* Leechblock */
+.webextension-browser-action[data-extensionid="leechblockng@proginosko.com"] {
+  list-style-image: url(./icons/leechblock.svg) !important;
+}
+
+/* Tomato Clock */
+.webextension-browser-action[data-extensionid="jid1-Kt2kYYgi32zPuw@jetpack"] {
+  list-style-image: url(./icons/tomato.svg) !important;
+}
+
 /** Disabled Extension Icons  ********************************************************************/
 
 /* https://www.reddit.com/r/FirefoxCSS/comments/11k9qa6/comment/jb6gd4a/?utm_source=reddit&utm_medium=web2x&context=3 */
@@ -95,11 +100,6 @@
 /* Imagus */
 .unified-extensions-item-action-button[data-extensionid="{00000f2a-7cde-4f20-83ed-434fcb420d71}"]::before {
   content: url(./icons/imagus.svg);
-}
-
-/* NightTab */
-.unified-extensions-item-action-button[data-extensionid="{47bf427e-c83d-457d-9b3d-3db4118574bd}"]::before {
-  content: url(./icons/nighttab.svg);
 }
 
 /* Tabliss */
