@@ -77,6 +77,7 @@
 /** Default color tweaks */
 @supports -moz-bool-pref("color_scheme.apply_tweaks") {
   :root,
+  #tabbrowser-tabs,
   panel,
   dialog,
   window {
@@ -97,5 +98,7 @@
     --in-content-box-info-background: var(--uc-secundary-color) !important;
     --in-content-page-color: var(--uc-foreground-color) !important;
     --color-accent-primary: var(--uc-accent-color) !important;
+
+    --tab-line-color: var(--uc-accent-color) !important;
   }
 }
