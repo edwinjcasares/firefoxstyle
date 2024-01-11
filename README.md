@@ -8,12 +8,6 @@ My configuration for Firefox using custom CSS, Firefox UI Fix and Sidebery V5.
 
 * [Dark Night Frost](https://addons.mozilla.org/en-US/firefox/addon/dark-night-frost/)
 
-
-## Screenshots
-![Expanded Vertical Tabs](/img/collapsed.png)
-
-![Collapsed Vertical Tabs](/img/expanded.png)
-
 ## Acknowledgments
 * [Sidebery V5](https://github.com/mbnuqw/sidebery/releases)
 * [Firefox UI Fix](https://github.com/black7375/Firefox-UI-Fix)
