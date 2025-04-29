@@ -6,9 +6,6 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 // Fill SVG color
 user_pref("svg.context-properties.content.enabled", true);
 
-// CSS Color Mix
-user_pref("layout.css.color-mix.enabled", true);
-
 // CSS Blur Filter
 user_pref("layout.css.backdrop-filter.enabled", true);
 
@@ -22,9 +19,9 @@ user_pref("userChrome.compatibility.theme", true);
 user_pref("userChrome.compatibility.os", true);
 
 user_pref("userChrome.theme.proton_color", true);
-user_pref("userChrome.theme.proton_chrome", true); // Need proton_color
-user_pref("userChrome.theme.fully_color", true); // Need proton_color
-user_pref("userChrome.theme.fully_dark", true); // Need proton_color
+user_pref("userChrome.theme.proton_chrome", true);
+user_pref("userChrome.theme.fully_color", true);
+user_pref("userChrome.theme.fully_dark", true);
 
 user_pref("userChrome.decoration.cursor", true);
 user_pref("userChrome.decoration.field_border", true);
@@ -59,26 +56,15 @@ user_pref("userContent.player.click_to_play", true);
 user_pref("userContent.page.field_border", true);
 user_pref("userContent.page.illustration", true);
 user_pref("userContent.page.proton_color", true);
-user_pref("userContent.page.dark_mode", true); // Need proton_color
-user_pref("userContent.page.proton", true); // Need proton_color
-
-user_pref("userChrome.hidden.tabbar", true);
-
-
-// ** Linux Compatibility *************************************************************************
-
-// Linux: Sidebar Hover fix
-// user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
-
-// Linux's non native titlebar button
-// user_pref("userChrome.compatibility.os.linux_non_native_titlebar_button", true);
+user_pref("userContent.page.dark_mode", true);
+user_pref("userContent.page.proton", true);
 
 
 // ** Personal Options ****************************************************************************
 
 // Smoothscroll
-user_pref("general.smoothScroll",                       true); // DEFAULT
-user_pref("mousewheel.default.delta_multiplier_y",      275);  // 250-400
+user_pref("general.smoothScroll", true); // DEFAULT
+user_pref("mousewheel.default.delta_multiplier_y", 275);  // 250-400
 
 // Microphone indicator
 user_pref("privacy.webrtc.legacyGlobalIndicator", false);
@@ -101,17 +87,24 @@ user_pref("browser.urlbar.suggest.calculator", true);
 // Integrated unit convertor at urlbar
 user_pref("browser.urlbar.unitConversion.enabled", true);
 
-// Windows: Ungroup taskbar icons per profile
+// Profiles
+user_pref("browser.profiles.enabled ", true);
 user_pref("taskbar.grouping.useprofile", true);
 
+// Vertical Tabs
+user_pref("sidebar.verticalTabs", true);
+user_pref("sidebar.visibility", "expand-on-hover");
+
+// Always show bookmarks toolbar
+user_pref("browser.toolbars.bookmarks.visibility", "always");
 
 // ** Personal Tweaks *****************************************************************************
 
 // Select one color scheme
 user_pref("color_scheme.dark", false);
-user_pref("color_scheme.nordic", true);
+user_pref("color_scheme.nordic", false);
 user_pref("color_scheme.mocha", false);
-user_pref("color_scheme.tokyo", false);
+user_pref("color_scheme.tokyo", true);
 
 // Select one accent color
 user_pref("color_scheme.accent_moss", false);

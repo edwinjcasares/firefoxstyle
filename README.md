@@ -1,6 +1,6 @@
 # Firefox Style
 
-My configuration for Firefox using custom CSS, Firefox UI Fix and Sidebery V5.
+My configuration for Firefox using custom CSS and Firefox UI Fix.
 
 ## Themes
 * [Nordic Night Frost](https://addons.mozilla.org/en-US/firefox/addon/nordic-night-frost/)
@@ -9,7 +9,6 @@ My configuration for Firefox using custom CSS, Firefox UI Fix and Sidebery V5.
 * [Dark Night Frost](https://addons.mozilla.org/en-US/firefox/addon/dark-night-frost/)
 
 ## Acknowledgments
-* [Sidebery V5](https://github.com/mbnuqw/sidebery/releases)
 * [Firefox UI Fix](https://github.com/black7375/Firefox-UI-Fix)
 * [Firefox CSS Hacks](https://github.com/MrOtherGuy/firefox-csshacks)
 * [Icons](https://www.iconfinder.com/remix-icon)
