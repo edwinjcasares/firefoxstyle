@@ -93,7 +93,10 @@ user_pref("taskbar.grouping.useprofile", true);
 
 // Vertical Tabs
 user_pref("sidebar.verticalTabs", true);
-user_pref("sidebar.visibility", "expand-on-hover");
+// user_pref("sidebar.visibility", "expand-on-hover");
+
+// Tab Grouping
+user_pref("browser.tabs.groups.enabled", true);
 
 // Always show bookmarks toolbar
 user_pref("browser.toolbars.bookmarks.visibility", "always");
