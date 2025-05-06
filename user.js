@@ -26,17 +26,10 @@ user_pref("userChrome.theme.fully_dark", true);
 user_pref("userChrome.decoration.cursor", true);
 user_pref("userChrome.decoration.field_border", true);
 user_pref("userChrome.decoration.download_panel", true);
-user_pref("userChrome.decoration.animate", true);
 
 user_pref("userChrome.tab.multi_selected", true);
-user_pref("userChrome.tab.letters_cleary", true);
-user_pref("userChrome.tab.dynamic_separator", true);
-user_pref("userChrome.tab.close_button_at_hover", true);
-user_pref("userChrome.tab.sound_with_favicons", true);
-user_pref("userChrome.tab.sound_hide_label", true);
 user_pref("userChrome.tab.unloaded", true);
 user_pref("userChrome.tab.crashed", true);
-user_pref("userChrome.tab.pip", true);
 
 user_pref("userChrome.icon.panel_full", true);
 user_pref("userChrome.icon.panel", true);
@@ -62,9 +55,12 @@ user_pref("userContent.page.proton", true);
 
 // ** Personal Options ****************************************************************************
 
+// Mica
+user_pref("widget.windows.mica", true);
+user_pref("widget.windows.mica.toplevel-backdrop", 2);
+
 // Smoothscroll
-user_pref("general.smoothScroll", true); // DEFAULT
-user_pref("mousewheel.default.delta_multiplier_y", 275);  // 250-400
+user_pref("mousewheel.default.delta_multiplier_y", 275);
 
 // Microphone indicator
 user_pref("privacy.webrtc.legacyGlobalIndicator", false);
@@ -88,18 +84,15 @@ user_pref("browser.urlbar.suggest.calculator", true);
 user_pref("browser.urlbar.unitConversion.enabled", true);
 
 // Profiles
-user_pref("browser.profiles.enabled ", true);
-user_pref("taskbar.grouping.useprofile", true);
-
-// Vertical Tabs
-user_pref("sidebar.verticalTabs", true);
-// user_pref("sidebar.visibility", "expand-on-hover");
+user_pref("browser.profiles.enabled", true);
 
 // Tab Grouping
 user_pref("browser.tabs.groups.enabled", true);
 
-// Always show bookmarks toolbar
+// Bookmarks toolbar
 user_pref("browser.toolbars.bookmarks.visibility", "always");
+user_pref("browser.bookmarks.addedImportButton", false);
+
 
 // ** Personal Tweaks *****************************************************************************
 
@@ -110,8 +103,8 @@ user_pref("color_scheme.mocha", false);
 user_pref("color_scheme.tokyo", true);
 
 // Select one accent color
-user_pref("color_scheme.accent_moss", false);
-user_pref("color_scheme.accent_frost", true);
+user_pref("color_scheme.accent_moss", true);
+user_pref("color_scheme.accent_frost", false);
 
 // Apply my color scheme to some elements
 user_pref("color_scheme.apply_tweaks", true);
