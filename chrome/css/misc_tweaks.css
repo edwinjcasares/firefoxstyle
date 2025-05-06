@@ -70,4 +70,10 @@ browser[type="content"] > html {
 }
 
 /** Remove unremovable blank area from toolbar */
-.titlebar-spacer {   display: none; } 
+#vertical-spacer { display: none; } 
+
+/** Remove top border and show final spacer */
+#nav-bar { border-top: 0px !important; }
+.titlebar-spacer {
+  &[type="post-tabs"] { display: flex !important; }
+}
