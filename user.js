@@ -88,6 +88,7 @@ user_pref("browser.profiles.enabled", true);
 
 // Tab Grouping
 user_pref("browser.tabs.groups.enabled", true);
+user_pref("taskbar.grouping.useprofile", true);
 
 // Bookmarks toolbar
 user_pref("browser.toolbars.bookmarks.visibility", "always");
