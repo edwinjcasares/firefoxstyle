@@ -36,10 +36,24 @@
   width: 1.45em !important;
 }
 
+/* Firefox Containers */
+.webextension-browser-action[data-extensionid="@testpilot-containers"] {
+  list-style-image: url(./icons/container.svg) !important;
+}
+#pageAction-urlbar-_testpilot-containers,
+#pageAction-urlbar-_testpilot-containers > image {
+  list-style-image: url(./icons/container-open.svg) !important;
+  filter: none !important;
+}
+
 /* Side View */
-#pageAction-urlbar-side-view_mozilla_org,
 .webextension-browser-action[data-extensionid="side-view@mozilla.org"] {
   list-style-image: url(./icons/sideview.svg) !important;
+}
+#pageAction-urlbar-side-view_mozilla_org,
+#pageAction-urlbar-side-view_mozilla_org > image {
+  list-style-image: url(./icons/sideview.svg) !important;
+  filter: none !important;
 }
 
 #side-view_mozilla_org-menuitem-_open-in-sidebar > .menu-iconic-left { 
