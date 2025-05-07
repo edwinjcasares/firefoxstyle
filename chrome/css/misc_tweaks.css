@@ -77,3 +77,24 @@ browser[type="content"] > html {
 .titlebar-spacer {
   &[type="post-tabs"] { display: flex !important; }
 }
+
+/** Right sidebar */
+#sidebar-box:not([sidebar-positionend]) { 
+  order: 6 !important;
+  padding: 0 !important;
+  margin-inline-start: 0 !important;
+}
+#sidebar:not([sidebar-positionend]) { border-radius: 0 !important; }
+:root[sidebar-expand-on-hover] {
+  #tabbrowser-tabbox {
+    &:not([sidebar-positionend]) {
+      &[sidebar-panel-open] {
+        margin-inline-start: 0 !important;
+      }
+      &[sidebar-panel-open][sidebar-launcher-hovered][sidebar-launcher-expanded],
+      &[sidebar-ongoing-animations][sidebar-panel-open] {
+        margin-inline-start: var(--sidebar-launcher-collapsed-width) !important;
+      }
+    }
+  }
+}

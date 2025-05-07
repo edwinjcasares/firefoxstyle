@@ -88,11 +88,14 @@ user_pref("browser.profiles.enabled", true);
 
 // Tab Grouping
 user_pref("browser.tabs.groups.enabled", true);
-user_pref("taskbar.grouping.useprofile", true);
+user_pref("taskbar.grouping.useprofile", false);
 
 // Bookmarks toolbar
 user_pref("browser.toolbars.bookmarks.visibility", "always");
 user_pref("browser.bookmarks.addedImportButton", false);
+
+// Vertical tabs
+user_pref("sidebar.animation.expand-on-hover.duration-ms", 200);
 
 
 // ** Personal Tweaks *****************************************************************************
@@ -104,8 +107,8 @@ user_pref("color_scheme.mocha", false);
 user_pref("color_scheme.tokyo", true);
 
 // Select one accent color
-user_pref("color_scheme.accent_moss", true);
-user_pref("color_scheme.accent_frost", false);
+user_pref("color_scheme.accent_moss", false);
+user_pref("color_scheme.accent_frost", true);
 
 // Apply my color scheme to some elements
 user_pref("color_scheme.apply_tweaks", true);
