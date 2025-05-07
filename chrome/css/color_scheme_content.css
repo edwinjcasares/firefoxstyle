@@ -3,7 +3,7 @@
 /** Color Tweaks *********************************************************************************/
 
 /** Dark colors*/
-@supports -moz-bool-pref("color_scheme.dark") {
+@media -moz-pref("color_scheme.dark") {
   @-moz-document url-prefix("about:"), url-prefix("chrome://"), url-prefix("https://addons.mozilla.org"), url-prefix("https://support.mozilla.org"), url-prefix("https://accounts.firefox.com"), url-prefix("view-source"), regexp("^((jar:)?file:///).*/$") {
     :host,
     :root,
@@ -19,7 +19,7 @@
 }
 
 /** Nordic colors*/
-@supports -moz-bool-pref("color_scheme.nordic") {
+@media -moz-pref("color_scheme.nordic") {
   @-moz-document url-prefix("about:"), url-prefix("chrome://"), url-prefix("https://addons.mozilla.org"), url-prefix("https://support.mozilla.org"), url-prefix("https://accounts.firefox.com"), url-prefix("view-source"), regexp("^((jar:)?file:///).*/$") {
     :host,
     :root,
@@ -35,7 +35,7 @@
 }
 
 /** Mocha colors*/
-@supports -moz-bool-pref("color_scheme.mocha") {
+@media -moz-pref("color_scheme.mocha") {
   @-moz-document url-prefix("about:"), url-prefix("chrome://"), url-prefix("https://addons.mozilla.org"), url-prefix("https://support.mozilla.org"), url-prefix("https://accounts.firefox.com"), url-prefix("view-source"), regexp("^((jar:)?file:///).*/$") {
     :host,
     :root,
@@ -51,7 +51,7 @@
 }
 
 /** Tokyo Night colors*/
-@supports -moz-bool-pref("color_scheme.tokyo") {
+@media -moz-pref("color_scheme.tokyo") {
   @-moz-document url-prefix("about:"), url-prefix("chrome://"), url-prefix("https://addons.mozilla.org"), url-prefix("https://support.mozilla.org"), url-prefix("https://accounts.firefox.com"), url-prefix("view-source"), regexp("^((jar:)?file:///).*/$") {
     :host,
     :root,
@@ -67,7 +67,7 @@
 }
 
 /** Frost accent color */
-@supports -moz-bool-pref("color_scheme.accent_frost") {
+@media -moz-pref("color_scheme.accent_frost") {
   @-moz-document url-prefix("about:"), url-prefix("chrome://"), url-prefix("https://addons.mozilla.org"), url-prefix("https://support.mozilla.org"), url-prefix("https://accounts.firefox.com"), url-prefix("view-source"), regexp("^((jar:)?file:///).*/$") {
     :host,
     :root,
@@ -81,7 +81,7 @@
 }
 
 /** Moss accent color */
-@supports -moz-bool-pref("color_scheme.accent_moss") {
+@media -moz-pref("color_scheme.accent_moss") {
   @-moz-document url-prefix("about:"), url-prefix("chrome://"), url-prefix("https://addons.mozilla.org"), url-prefix("https://support.mozilla.org"), url-prefix("https://accounts.firefox.com"), url-prefix("view-source"), regexp("^((jar:)?file:///).*/$") {
     :host,
     :root,
@@ -95,7 +95,7 @@
 }
 
 /** Default color tweaks */
-@supports -moz-bool-pref("color_scheme.apply_tweaks") {
+@media -moz-pref("color_scheme.apply_tweaks") {
   @-moz-document url-prefix("about:"), url-prefix("chrome://"), url-prefix("https://addons.mozilla.org"), url-prefix("https://support.mozilla.org"), url-prefix("https://accounts.firefox.com"), url-prefix("view-source"), regexp("^((jar:)?file:///).*/$") {
     :host,
     :root,
@@ -121,6 +121,7 @@
       --color-accent-primary: var(--uc-accent-color) !important;
 
       --tab-line-color: var(--uc-accent-color) !important;
+      --focus-outline-color: var(--uc-accent-color) !important;
     }
   }
 }

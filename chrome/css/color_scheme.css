@@ -1,7 +1,7 @@
 /** Color Tweaks *********************************************************************************/
 
 /** Dark colors*/
-@supports -moz-bool-pref("color_scheme.dark") {
+@media -moz-pref("color_scheme.dark") {
   :root,
   panel,
   dialog,
@@ -14,7 +14,7 @@
 }
 
 /** Nordic colors*/
-@supports -moz-bool-pref("color_scheme.nordic") {
+@media -moz-pref("color_scheme.nordic") {
   :root,
   panel,
   dialog,
@@ -27,7 +27,7 @@
 }
 
 /** Mocha colors*/
-@supports -moz-bool-pref("color_scheme.mocha") {
+@media -moz-pref("color_scheme.mocha") {
   :root,
   panel,
   dialog,
@@ -40,7 +40,7 @@
 }
 
 /** Tokyo Night colors*/
-@supports -moz-bool-pref("color_scheme.tokyo") {
+@media -moz-pref("color_scheme.tokyo") {
   :root,
   panel,
   dialog,
@@ -53,7 +53,7 @@
 }
 
 /** Frost accent color */
-@supports -moz-bool-pref("color_scheme.accent_frost") {
+@media -moz-pref("color_scheme.accent_frost") {
   :root,
   panel,
   dialog,
@@ -64,7 +64,7 @@
 }
 
 /** Moss accent color */
-@supports -moz-bool-pref("color_scheme.accent_moss") {
+@media -moz-pref("color_scheme.accent_moss") {
   :root,
   panel,
   dialog,
@@ -75,9 +75,10 @@
 }
 
 /** Default color tweaks */
-@supports -moz-bool-pref("color_scheme.apply_tweaks") {
+@media -moz-pref("color_scheme.apply_tweaks") {
   :root,
   #tabbrowser-tabs,
+  #main-window,
   panel,
   dialog,
   window {
@@ -100,5 +101,6 @@
     --color-accent-primary: var(--uc-accent-color) !important;
 
     --tab-line-color: var(--uc-accent-color) !important;
+    --focus-outline-color: var(--uc-accent-color) !important;
   }
 }
