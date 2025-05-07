@@ -37,6 +37,7 @@
 }
 
 /* Side View */
+#pageAction-urlbar-side-view_mozilla_org,
 .webextension-browser-action[data-extensionid="side-view@mozilla.org"] {
   list-style-image: url(./icons/sideview.svg) !important;
 }
