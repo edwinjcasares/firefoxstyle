@@ -85,10 +85,10 @@ user_pref("browser.urlbar.unitConversion.enabled", true);
 
 // Profiles
 user_pref("browser.profiles.enabled", true);
+user_pref("taskbar.grouping.useprofile", false);
 
 // Tab Grouping
 user_pref("browser.tabs.groups.enabled", true);
-user_pref("taskbar.grouping.useprofile", false);
 
 // Bookmarks toolbar
 user_pref("browser.toolbars.bookmarks.visibility", "always");

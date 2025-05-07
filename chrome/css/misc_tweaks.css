@@ -78,7 +78,16 @@ browser[type="content"] > html {
   &[type="post-tabs"] { display: flex !important; }
 }
 
-/** Right sidebar */
+/** Hide Sidebar settings buttons */
+#toolbar-context-toggle-vertical-tabs,
+button-group.tools-and-extensions > moz-button[view="viewCustomizeSidebar"] {
+  display: none !important;
+}
+
+/** Sidebar Width */
+#sidebar-box:not([sidebarcommand="viewCustomizeSidebar"]) { min-width: 450px !important; }
+
+/** Right Sidebar */
 #sidebar-box:not([sidebar-positionend]) { 
   order: 6 !important;
   padding: 0 !important;

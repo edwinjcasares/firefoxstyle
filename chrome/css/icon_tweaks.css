@@ -1,16 +1,4 @@
-/** Extension Icons  *****************************************************************************/
-
-/* Ublock */
-.webextension-browser-action[data-extensionid="uBlock0@raymondhill.net"] {
-  list-style-image: url(./icons/ublock.svg) !important;
-}
-
-#ublock0_raymondhill_net-menuitem-_uBlock0-blockElement > .menu-iconic-left { 
-  content: url(./icons/ublock.svg);
-  -moz-context-properties: fill;
-  fill: currentColor;
-  width: 1.45em !important;
-}
+/** Extension Icons with Context Menus *****************************************************************************/
 
 /* Bitwarden */
 .webextension-browser-action[data-extensionid="{446900e4-71c2-419f-a6a7-df9c091e268b}"] {
@@ -19,6 +7,18 @@
 
 #_446900e4-71c2-419f-a6a7-df9c091e268b_-menuitem-_root > .menu-iconic-left { 
   content: url(./icons/bitwarden.svg);
+  -moz-context-properties: fill;
+  fill: currentColor;
+  width: 1.45em !important;
+}
+
+/* Language Tool */
+.webextension-browser-action[data-extensionid="languagetool-webextension@languagetool.org"] {
+  list-style-image: url(./icons/language-tool.svg) !important;
+}
+
+#languagetool-webextension_languagetool_org-menuitem-_languagetool-menu > .menu-iconic-left { 
+  content: url(./icons/language-tool.svg);
   -moz-context-properties: fill;
   fill: currentColor;
   width: 1.45em !important;
@@ -36,42 +36,63 @@
   width: 1.45em !important;
 }
 
-/* Sidebery */
-.webextension-browser-action[data-extensionid="{3c078156-979c-498b-8990-85f7987dd929}"] {
-  list-style-image: url(./icons/sidebery.svg) !important;
+/* Side View */
+.webextension-browser-action[data-extensionid="side-view@mozilla.org"] {
+  list-style-image: url(./icons/sideview.svg) !important;
 }
 
-/* Sponsorblock */
-.webextension-browser-action[data-extensionid="sponsorBlocker@ajay.app"] {
-  list-style-image: url(./icons/sponsorblock.svg) !important;
-}
-
-/* Youtube HD */
-.webextension-browser-action[data-extensionid="{7b1bf0b6-a1b9-42b0-b75d-252036438bdc}"] {
-  list-style-image: url(./icons/youtube-hd.svg) !important;
-}
-
-/* Language Tool */
-.webextension-browser-action[data-extensionid="languagetool-webextension@languagetool.org"] {
-  list-style-image: url(./icons/language-tool.svg) !important;
-}
-
-#languagetool-webextension_languagetool_org-menuitem-_languagetool-menu > .menu-iconic-left { 
-  content: url(./icons/language-tool.svg);
+#side-view_mozilla_org-menuitem-_open-in-sidebar > .menu-iconic-left { 
+  content: url(./icons/sideview.svg);
   -moz-context-properties: fill;
   fill: currentColor;
   width: 1.45em !important;
 }
 
-/* Notion */
-.webextension-browser-action[data-extensionid="{4b547b2c-e114-4344-9b70-09b2fe0785f3}"] {
-  list-style-image: url(./icons/notion.svg) !important;
+/* Ublock */
+.webextension-browser-action[data-extensionid="uBlock0@raymondhill.net"] {
+  list-style-image: url(./icons/ublock.svg) !important;
 }
 
-/* Dark Reader */
-.webextension-browser-action[data-extensionid="addon@darkreader.org"] {
-  list-style-image: url(./icons/dark_reader.svg) !important;
+#ublock0_raymondhill_net-menuitem-_uBlock0-blockElement > .menu-iconic-left { 
+  content: url(./icons/ublock.svg);
+  -moz-context-properties: fill;
+  fill: currentColor;
+  width: 1.45em !important;
 }
+
+/** Extension Icons without Context Menus *****************************************************************************/
+
+/* Bonjour */
+.webextension-browser-action[data-extensionid="{4f391a9e-8717-4ba6-a5b1-488a34931fcb}"] {
+  list-style-image: url(./icons/bonjour.svg) !important;
+}
+
+/* Enhancer for Youtube */
+.webextension-browser-action[data-extensionid="enhancerforyoutube@maximerf.addons.mozilla.org"] {
+  list-style-image: url(./icons/enhancer-youtube.svg) !important;
+}
+
+/* Keepa */
+.webextension-browser-action[data-extensionid="amptra@keepa.com"] {
+  list-style-image: url(./icons/keepa.svg) !important;
+}
+
+/* Sponsorblock */
+.webextension-browser-action[data-extensionid="sponsorBlocker@ajay.app"] {
+  list-style-image: url(./icons/sponsor-block.svg) !important;
+}
+
+/* SteamDB */
+.webextension-browser-action[data-extensionid="firefox-extension@steamdb.info"] {
+  list-style-image: url(./icons/steamdb.svg) !important;
+}
+
+/* Upnote */
+.webextension-browser-action[data-extensionid="{a20e5019-add8-49db-9199-3c3bea455c3f}"] {
+  list-style-image: url(./icons/upnote.svg) !important;
+}
+
+
 
 /** Disabled Extension Icons  ********************************************************************/
 
@@ -90,4 +111,9 @@
 /* Imagus */
 .unified-extensions-item-action-button[data-extensionid="{00000f2a-7cde-4f20-83ed-434fcb420d71}"]::before {
   content: url(./icons/imagus.svg);
+}
+
+/* Tabliss */
+.unified-extensions-item-action-button[data-extensionid="extension@tabliss.io"]::before {
+  content: url(./icons/tabliss.svg);
 }
