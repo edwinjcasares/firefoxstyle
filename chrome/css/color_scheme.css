@@ -102,5 +102,6 @@
 
     --tab-line-color: var(--uc-accent-color) !important;
     --focus-outline-color: var(--uc-accent-color) !important;
+    --link-color: var(--uc-accent-color) !important;
   }
 }

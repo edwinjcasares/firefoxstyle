@@ -105,23 +105,24 @@
       --in-content-primary-button-background: var(--uc-accent-color) !important;
       --in-content-primary-button-background-active: var(--uc-accent-color) !important;
       --in-content-primary-button-background-hover: var(--uc-accent-highlight-color) !important;
-
+  
       --focus-outline-color: var(--uc-accent-color) !important;
       --in-content-link-color: var(--uc-accent-color) !important;
       --urlbar-popup-url-color: var(--uc-accent-color) !important;
       --checkbox-checked-bgcolor: var(--uc-accent-color) !important;
       --checkbox-checked-active-bgcolor: var(--uc-accent-color) !important;
       --checkbox-checked-hover-bgcolor: var(--uc-accent-highlight-color) !important;
-
+  
       --in-content-page-background: var(--uc-primary-color) !important;
       --in-content-box-background: var(--uc-secundary-color) !important;
       --in-content-table-background: var(--uc-secundary-color) !important;
       --in-content-box-info-background: var(--uc-secundary-color) !important;
       --in-content-page-color: var(--uc-foreground-color) !important;
       --color-accent-primary: var(--uc-accent-color) !important;
-
+  
       --tab-line-color: var(--uc-accent-color) !important;
       --focus-outline-color: var(--uc-accent-color) !important;
+      --link-color: var(--uc-accent-color) !important;
     }
   }
 }
