@@ -12,6 +12,18 @@
   width: 1.45em !important;
 }
 
+/* Discard Tab */
+.webextension-browser-action[data-extensionid="{09420bd6-3c35-444d-b85c-74d51fe3df4f}"] {
+  list-style-image: url(./icons/discard-tab.svg) !important;
+}
+
+#_09420bd6-3c35-444d-b85c-74d51fe3df4f_-menuitem-_discard > .menu-iconic-left { 
+  content: url(./icons/discard-tab.svg);
+  -moz-context-properties: fill;
+  fill: currentColor;
+  width: 1.45em !important;
+}
+
 /* Language Tool */
 .webextension-browser-action[data-extensionid="languagetool-webextension@languagetool.org"] {
   list-style-image: url(./icons/language-tool.svg) !important;
@@ -90,6 +102,11 @@
 /* Keepa */
 .webextension-browser-action[data-extensionid="amptra@keepa.com"] {
   list-style-image: url(./icons/keepa.svg) !important;
+}
+
+/* Load Reddit Images Directly */
+.webextension-browser-action[data-extensionid="{4c421bb7-c1de-4dc6-80c7-ce8625e34d24}"] {
+  list-style-image: url(./icons/reddit-images.svg) !important;
 }
 
 /* Sponsorblock */
