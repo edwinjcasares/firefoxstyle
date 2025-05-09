@@ -52,27 +52,38 @@
 .webextension-browser-action[data-extensionid="@testpilot-containers"] {
   list-style-image: url(./icons/container.svg) !important;
 }
+
+#_testpilot-containers-menuitem-_open-bookmark-in-container-tab > .menu-iconic-left { 
+  content: url(./icons/container.svg);
+  -moz-context-properties: fill;
+  fill: currentColor;
+  width: 1.45em !important;
+}
+
 #pageAction-urlbar-_testpilot-containers,
 #pageAction-urlbar-_testpilot-containers > image {
   list-style-image: url(./icons/container-open.svg) !important;
   filter: none !important;
 }
 
+
 /* Side View */
 .webextension-browser-action[data-extensionid="side-view@mozilla.org"] {
   list-style-image: url(./icons/sideview.svg) !important;
 }
-#pageAction-urlbar-side-view_mozilla_org,
-#pageAction-urlbar-side-view_mozilla_org > image {
-  list-style-image: url(./icons/sideview.svg) !important;
-  filter: none !important;
-}
 
-#side-view_mozilla_org-menuitem-_open-in-sidebar > .menu-iconic-left { 
+#side-view_mozilla_org-menuitem-_open-in-sidebar > .menu-iconic-left,
+#side-view_mozilla_org-menuitem-_open-link-in-sidebar > .menu-iconic-left { 
   content: url(./icons/sideview.svg);
   -moz-context-properties: fill;
   fill: currentColor;
   width: 1.45em !important;
+}
+
+#pageAction-urlbar-side-view_mozilla_org,
+#pageAction-urlbar-side-view_mozilla_org > image {
+  list-style-image: url(./icons/sideview.svg) !important;
+  filter: none !important;
 }
 
 /* Ublock */
