@@ -48,25 +48,6 @@
   width: 1.45em !important;
 }
 
-/* Firefox Containers */
-.webextension-browser-action[data-extensionid="@testpilot-containers"] {
-  list-style-image: url(./icons/container.svg) !important;
-}
-
-#_testpilot-containers-menuitem-_open-bookmark-in-container-tab > .menu-iconic-left { 
-  content: url(./icons/container.svg);
-  -moz-context-properties: fill;
-  fill: currentColor;
-  width: 1.45em !important;
-}
-
-#pageAction-urlbar-_testpilot-containers,
-#pageAction-urlbar-_testpilot-containers > image {
-  list-style-image: url(./icons/container-open.svg) !important;
-  filter: none !important;
-}
-
-
 /* Side View */
 .webextension-browser-action[data-extensionid="side-view@mozilla.org"] {
   list-style-image: url(./icons/sideview.svg) !important;
@@ -128,6 +109,11 @@
 /* SteamDB */
 .webextension-browser-action[data-extensionid="firefox-extension@steamdb.info"] {
   list-style-image: url(./icons/steamdb.svg) !important;
+}
+
+/* Switch Container */
+.webextension-browser-action[data-extensionid="{c580e2d6-885a-4cb9-af49-59b3b48350e9}"] {
+  list-style-image: url(./icons/switch-container.svg) !important;
 }
 
 /* Upnote */

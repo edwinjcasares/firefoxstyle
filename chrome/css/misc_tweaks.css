@@ -69,6 +69,13 @@ browser[type="content"] > html {
   background: var(--in-content-page-background) !important;
 }
 
+/** Profile Icons */
+.subviewbutton-iconic > .toolbarbutton-icon,
+.profile-item > .toolbarbutton-icon {
+  color: transparent !important;
+  stroke: var(--arrowpanel-color) !important;
+}
+
 /** Remove unremovable blank area from toolbar */
 #vertical-spacer { display: none; } 
 
