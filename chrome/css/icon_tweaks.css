@@ -13,8 +13,16 @@
 }
 
 /* Discard Tab */
-.webextension-browser-action[data-extensionid="{09420bd6-3c35-444d-b85c-74d51fe3df4f}"] {
-  list-style-image: url(./icons/discard-tab.svg) !important;
+.unified-extensions-item-action-button[data-extensionid="{09420bd6-3c35-444d-b85c-74d51fe3df4f}"] > .unified-extensions-item-icon{
+  display: none;
+}
+.unified-extensions-item-action-button[data-extensionid="{09420bd6-3c35-444d-b85c-74d51fe3df4f}"]::before{
+  display: -moz-box;
+  height: var(--uei-icon-size);
+  width: var(--uei-icon-size);
+  -moz-context-properties: fill;
+  fill: currentColor;
+  content: url(./icons/discard-tab.svg);
 }
 
 #_09420bd6-3c35-444d-b85c-74d51fe3df4f_-menuitem-_discard > .menu-iconic-left { 

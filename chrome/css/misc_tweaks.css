@@ -51,6 +51,16 @@
   color: inherit !important;
 }
 
+/** Tab sound icon  */
+.tabbrowser-tab .tab-icon-overlay {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+.tabbrowser-tab:not([selected]) .tab-icon-overlay {
+  fill: var(--newtab-text-primary-color) !important;
+}
+
+
 /** Browser content border */
 #appcontent > #tabbrowser-tabbox > #tabbrowser-tabpanels
 > .deck-selected > .browserContainer > .browserStack > browser {

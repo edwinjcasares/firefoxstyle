@@ -21,6 +21,10 @@
 #spell-language-separator,
 #context-sep-bidi,
 
+/*---------- Remove Chat Provider ------------------*/
+menuitem[data-l10n-id="genai-menu-remove-provider"],
+#context-ask-chat > menupopup > menuseparator,
+
 /*---------- Send Image by Mail ------------------*/
 #context-sendvideo,
 #context-sendaudio,
