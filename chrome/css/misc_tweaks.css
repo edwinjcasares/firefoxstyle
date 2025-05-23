@@ -95,6 +95,27 @@ browser[type="content"] > html {
   &[type="post-tabs"] { display: flex !important; }
 }
 
+/** Fix Tab Groups size and jumping when vertical tabs are expanded and during animation */
+.tab-group-label {
+  margin-inline: calc( (var(--tab-collapsed-width) - 24px )/2) !important;
+  #tabbrowser-tabs[orient="vertical"][expanded] & {
+    text-align: start;
+    line-height: 24px !important;
+    padding-block: unset !important;
+    padding-inline: 6px !important;
+  }
+  #tabbrowser-tabs[orient="vertical"]:not([expanded]) & {
+    line-height: 24px !important;
+    max-height: 24px !important;
+    min-height: unset !important;
+  }
+}
+.tab-group-label-container {
+  #tabbrowser-tabs[orient="vertical"][expanded] & {
+    margin-inline-start: 0px !important;
+  }
+}
+
 /** Hide Sidebar settings buttons */
 #toolbar-context-toggle-vertical-tabs,
 button-group.tools-and-extensions > moz-button[view="viewCustomizeSidebar"] {
