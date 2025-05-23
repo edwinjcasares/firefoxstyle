@@ -127,7 +127,7 @@ button-group.tools-and-extensions > moz-button[view="viewCustomizeSidebar"] {
 }
 
 /** Sidebar Width */
-#sidebar-box:not([sidebarcommand="viewCustomizeSidebar"]) { min-width: 450px !important; }
+#sidebar-box:not([sidebarcommand="viewCustomizeSidebar"]) { min-width: 550px !important; }
 
 /** Right Sidebar */
 #sidebar-box:not([sidebar-positionend]) { 
