@@ -84,7 +84,7 @@ user_pref("browser.urlbar.suggest.calculator", true);
 user_pref("browser.urlbar.unitConversion.enabled", true);
 
 // Profiles
-user_pref("browser.profiles.enabled", true);
+user_pref("browser.profiles.enabled", false);
 user_pref("taskbar.grouping.useprofile", false);
 
 // Tab Grouping
@@ -95,6 +95,9 @@ user_pref("browser.toolbars.bookmarks.visibility", "always");
 user_pref("browser.bookmarks.addedImportButton", false);
 
 // Vertical tabs
+user_pref("sidebar.revamp", true);
+user_pref("sidebar.verticalTabs", true);
+user_pref("sidebar.visibility", "expand-on-hover");
 user_pref("sidebar.animation.expand-on-hover.duration-ms", 200);
 
 
